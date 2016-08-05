@@ -3,8 +3,8 @@ module objects{
 /**
  * 
  */
-        constructor(pathString: string,x:number,y:number,isCentered:boolean){
-            super(pathString);
+        constructor(imageString: string,x:number,y:number,isCentered:boolean){
+            super(core.assets.getResult(imageString));
 //"../../Assets/images/startButton.png"
             if(isCentered)
             {

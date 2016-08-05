@@ -10,8 +10,8 @@ var objects;
         /**
          *
          */
-        function Button(pathString, x, y, isCentered) {
-            _super.call(this, pathString);
+        function Button(imageString, x, y, isCentered) {
+            _super.call(this, core.assets.getResult(imageString));
             //"../../Assets/images/startButton.png"
             if (isCentered) {
                 this.regX = this.getBounds().width * 0.5;

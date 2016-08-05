@@ -7,8 +7,8 @@ namespace core {
 
 
 
-
-
+    //declare a reference to the Preloader
+    export let assets: createjs.LoadQueue;
 
 
     // make a reference to the canvas element
@@ -19,6 +19,24 @@ namespace core {
 
     let helloLabel: objects.Label;
     let startButton: objects.Button;// reference to our button class
+
+    //asset manifest for images and sounds
+    let assetData = [
+        { id: "startButton", src: "../../Assets/images/startButton.png" }
+    ];
+    /**
+     * this method preloads assets for the game.
+     * @method preload
+     * @returns {void}
+     */
+    function preload(): void {
+        assets = new createjs.LoadQueue(); //instantiate the loader
+        assets.installPlugin(createjs.Sound);
+        assets.on("complete", init, this);
+        assets.loadManifest(assetData);
+    }
+
+
 
     function init(): void {
         //console.log("Game start now   haha!");
@@ -45,10 +63,10 @@ namespace core {
      */
     function main(): void {
 
-        helloLabel = new objects.Label("Hello World!", "40px","Consolas", "#000000",320,240);
-        
+        helloLabel = new objects.Label("Hello World!", "40px", "Consolas", "#000000", 320, 240);
+
         stage.addChild(helloLabel);
-        startButton = new objects.Button("../../Assets/images/startButton.png", 320, 340, true);
+        startButton = new objects.Button("startButton", 320, 340, true);
         stage.addChild(startButton);
 
         startButton.on("click", startButtonClick);
@@ -59,6 +77,6 @@ namespace core {
 
     }
 
-    window.addEventListener("load", init);
+    window.addEventListener("load", preload);
 
 }
