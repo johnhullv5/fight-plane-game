@@ -27,11 +27,7 @@ var core;
      * @returns {void}
      */
     function main() {
-        helloLabel = new createjs.Text("Hello World!", "40px Consolas", "#000000");
-        helloLabel.regX = helloLabel.getMeasuredWidth() * 0.9;
-        helloLabel.regY = helloLabel.getMeasuredHeight() * 0.9;
-        helloLabel.x = 320;
-        helloLabel.y = 240;
+        helloLabel = new objects.Label("Hello World!", "40px", "Consolas", "#000000", 320, 240);
         stage.addChild(helloLabel);
         startButton = new objects.Button("../../Assets/images/startButton.png", 320, 340, true);
         stage.addChild(startButton);
