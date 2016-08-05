@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Graphics.CordovaAudioSoundInstance</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/ButtonHelper.html">ButtonHelper</a></li>
+                                <li><a href="../classes/DisplayProps.html">DisplayProps</a></li>
+                                <li><a href="../classes/Event.html">Event</a></li>
+                                <li><a href="../classes/EventDispatcher.html">EventDispatcher</a></li>
+                                <li><a href="../classes/Graphics.html">Graphics</a></li>
+                                <li><a href="../classes/Graphics.AbstractLoader.html">Graphics.AbstractLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractMediaLoader.html">Graphics.AbstractMediaLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractPlugin.html">Graphics.AbstractPlugin</a></li>
+                                <li><a href="../classes/Graphics.AbstractRequest.html">Graphics.AbstractRequest</a></li>
+                                <li><a href="../classes/Graphics.AbstractSoundInstance.html">Graphics.AbstractSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.AlphaMapFilter.html">Graphics.AlphaMapFilter</a></li>
+                                <li><a href="../classes/Graphics.AlphaMaskFilter.html">Graphics.AlphaMaskFilter</a></li>
+                                <li><a href="../classes/Graphics.Arc.html">Graphics.Arc</a></li>
+                                <li><a href="../classes/Graphics.ArcTo.html">Graphics.ArcTo</a></li>
+                                <li><a href="../classes/Graphics.AudioSprite.html">Graphics.AudioSprite</a></li>
+                                <li><a href="../classes/Graphics.BeginPath.html">Graphics.BeginPath</a></li>
+                                <li><a href="../classes/Graphics.BezierCurveTo.html">Graphics.BezierCurveTo</a></li>
+                                <li><a href="../classes/Graphics.BinaryLoader.html">Graphics.BinaryLoader</a></li>
+                                <li><a href="../classes/Graphics.Bitmap.html">Graphics.Bitmap</a></li>
+                                <li><a href="../classes/Graphics.BitmapText.html">Graphics.BitmapText</a></li>
+                                <li><a href="../classes/Graphics.BlurFilter.html">Graphics.BlurFilter</a></li>
+                                <li><a href="../classes/Graphics.Circle.html">Graphics.Circle</a></li>
+                                <li><a href="../classes/Graphics.ClosePath.html">Graphics.ClosePath</a></li>
+                                <li><a href="../classes/Graphics.ColorFilter.html">Graphics.ColorFilter</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrix.html">Graphics.ColorMatrix</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrixFilter.html">Graphics.ColorMatrixFilter</a></li>
+                                <li><a href="../classes/Graphics.Container.html">Graphics.Container</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioLoader.html">Graphics.CordovaAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioPlugin.html">Graphics.CordovaAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioSoundInstance.html">Graphics.CordovaAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.CSSLoader.html">Graphics.CSSLoader</a></li>
+                                <li><a href="../classes/Graphics.DataUtils.html">Graphics.DataUtils</a></li>
+                                <li><a href="../classes/Graphics.DisplayObject.html">Graphics.DisplayObject</a></li>
+                                <li><a href="../classes/Graphics.DOMElement.html">Graphics.DOMElement</a></li>
+                                <li><a href="../classes/Graphics.DomUtils.html">Graphics.DomUtils</a></li>
+                                <li><a href="../classes/Graphics.Ease.html">Graphics.Ease</a></li>
+                                <li><a href="../classes/Graphics.EaselJS.html">Graphics.EaselJS</a></li>
+                                <li><a href="../classes/Graphics.Ellipse.html">Graphics.Ellipse</a></li>
+                                <li><a href="../classes/Graphics.ErrorEvent.html">Graphics.ErrorEvent</a></li>
+                                <li><a href="../classes/Graphics.Fill.html">Graphics.Fill</a></li>
+                                <li><a href="../classes/Graphics.Filter.html">Graphics.Filter</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioLoader.html">Graphics.FlashAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioPlugin.html">Graphics.FlashAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioSoundInstance.html">Graphics.FlashAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioPlugin.html">Graphics.HTMLAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioSoundInstance.html">Graphics.HTMLAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioTagPool.html">Graphics.HTMLAudioTagPool</a></li>
+                                <li><a href="../classes/Graphics.ImageLoader.html">Graphics.ImageLoader</a></li>
+                                <li><a href="../classes/Graphics.JavaScriptLoader.html">Graphics.JavaScriptLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONLoader.html">Graphics.JSONLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONPLoader.html">Graphics.JSONPLoader</a></li>
+                                <li><a href="../classes/Graphics.LineTo.html">Graphics.LineTo</a></li>
+                                <li><a href="../classes/Graphics.LoadItem.html">Graphics.LoadItem</a></li>
+                                <li><a href="../classes/Graphics.LoadQueue.html">Graphics.LoadQueue</a></li>
+                                <li><a href="../classes/Graphics.ManifestLoader.html">Graphics.ManifestLoader</a></li>
+                                <li><a href="../classes/Graphics.MediaTagRequest.html">Graphics.MediaTagRequest</a></li>
+                                <li><a href="../classes/Graphics.MotionGuidePlugin.html">Graphics.MotionGuidePlugin</a></li>
+                                <li><a href="../classes/Graphics.MoveTo.html">Graphics.MoveTo</a></li>
+                                <li><a href="../classes/Graphics.MovieClip.html">Graphics.MovieClip</a></li>
+                                <li><a href="../classes/Graphics.MovieClipPlugin.html">Graphics.MovieClipPlugin</a></li>
+                                <li><a href="../classes/Graphics.PlayPropsConfig.html">Graphics.PlayPropsConfig</a></li>
+                                <li><a href="../classes/Graphics.PolyStar.html">Graphics.PolyStar</a></li>
+                                <li><a href="../classes/Graphics.PreloadJS.html">Graphics.PreloadJS</a></li>
+                                <li><a href="../classes/Graphics.ProgressEvent.html">Graphics.ProgressEvent</a></li>
+                                <li><a href="../classes/Graphics.QuadraticCurveTo.html">Graphics.QuadraticCurveTo</a></li>
+                                <li><a href="../classes/Graphics.Rect.html">Graphics.Rect</a></li>
+                                <li><a href="../classes/Graphics.RequestUtils.html">Graphics.RequestUtils</a></li>
+                                <li><a href="../classes/Graphics.RoundRect.html">Graphics.RoundRect</a></li>
+                                <li><a href="../classes/Graphics.Shape.html">Graphics.Shape</a></li>
+                                <li><a href="../classes/Graphics.Sound.html">Graphics.Sound</a></li>
+                                <li><a href="../classes/Graphics.SoundJS.html">Graphics.SoundJS</a></li>
+                                <li><a href="../classes/Graphics.SoundLoader.html">Graphics.SoundLoader</a></li>
+                                <li><a href="../classes/Graphics.Sprite.html">Graphics.Sprite</a></li>
+                                <li><a href="../classes/Graphics.SpriteContainer.html">Graphics.SpriteContainer</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetBuilder.html">Graphics.SpriteSheetBuilder</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetLoader.html">Graphics.SpriteSheetLoader</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetUtils.html">Graphics.SpriteSheetUtils</a></li>
+                                <li><a href="../classes/Graphics.SpriteStage.html">Graphics.SpriteStage</a></li>
+                                <li><a href="../classes/Graphics.Stage.html">Graphics.Stage</a></li>
+                                <li><a href="../classes/Graphics.Stroke.html">Graphics.Stroke</a></li>
+                                <li><a href="../classes/Graphics.StrokeDash.html">Graphics.StrokeDash</a></li>
+                                <li><a href="../classes/Graphics.StrokeStyle.html">Graphics.StrokeStyle</a></li>
+                                <li><a href="../classes/Graphics.SVGLoader.html">Graphics.SVGLoader</a></li>
+                                <li><a href="../classes/Graphics.TagRequest.html">Graphics.TagRequest</a></li>
+                                <li><a href="../classes/Graphics.Text.html">Graphics.Text</a></li>
+                                <li><a href="../classes/Graphics.TextLoader.html">Graphics.TextLoader</a></li>
+                                <li><a href="../classes/Graphics.Timeline.html">Graphics.Timeline</a></li>
+                                <li><a href="../classes/Graphics.Touch.html">Graphics.Touch</a></li>
+                                <li><a href="../classes/Graphics.Tween.html">Graphics.Tween</a></li>
+                                <li><a href="../classes/Graphics.TweenJS.html">Graphics.TweenJS</a></li>
+                                <li><a href="../classes/Graphics.VideoLoader.html">Graphics.VideoLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioLoader.html">Graphics.WebAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioPlugin.html">Graphics.WebAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.WebAudioSoundInstance.html">Graphics.WebAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.XHRRequest.html">Graphics.XHRRequest</a></li>
+                                <li><a href="../classes/Graphics.XMLLoader.html">Graphics.XMLLoader</a></li>
+                                <li><a href="../classes/Matrix2D.html">Matrix2D</a></li>
+                                <li><a href="../classes/MouseEvent.html">MouseEvent</a></li>
+                                <li><a href="../classes/Point.html">Point</a></li>
+                                <li><a href="../classes/Rectangle.html">Rectangle</a></li>
+                                <li><a href="../classes/Shadow.html">Shadow</a></li>
+                                <li><a href="../classes/SpriteSheet.html">SpriteSheet</a></li>
+                                <li><a href="../classes/Ticker.html">Ticker</a></li>
+                                <li><a href="../classes/UID.html">UID</a></li>
+                                <li><a href="../classes/Utility Methods.html">Utility Methods</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Graphics.CordovaAudioSoundInstance Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends AbstractSoundInstance
+        </div>
+
+        <div class="foundat">
+            Defined in: <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l137"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:137</code></a>
+        </div>
+
+
+</div>
+
+
+<div class="box intro">
+    <p>CordovaAudioSoundInstance extends the base api of AbstractSoundInstance and is used by
+CordovaAudioPlugin.</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_Graphics.CordovaAudioSoundInstance" class="method item">
+    <h3 class="name"><code>Graphics.CordovaAudioSoundInstance</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>src</code>
+                </li>
+                <li class="arg">
+                        <code>startTime</code>
+                </li>
+                <li class="arg">
+                        <code>duration</code>
+                </li>
+                <li class="arg">
+                        <code>playbackResource</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l137"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:137</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">src</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The path to and file name of the sound.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">startTime</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>Audio sprite property used to apply an offset, in milliseconds.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">duration</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>Audio sprite property used to set the time the clip plays for, in milliseconds.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">playbackResource</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>Any resource needed by plugin to support audio playback.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method private">
+                                <a href="#method__handleMediaError">_handleMediaError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleMediaError">_handleMediaError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__updatePausePos">_updatePausePos</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__updatePausePos">_updatePausePos</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getCurrentPosition">getCurrentPosition</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getCurrentPosition">getCurrentPosition</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property protected">
+                                <a href="#property__audioSprite">_audioSprite</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__audioSprite">_audioSprite</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__audioSpriteTimeout">_audioSpriteTimeout</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__audioSpriteTimeout">_audioSpriteTimeout</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__playStartTime">_playStartTime</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__playStartTime">_playStartTime</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_playWhenScreenLocked">playWhenScreenLocked</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_playWhenScreenLocked">playWhenScreenLocked</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method__handleMediaError" class="method item private">
+    <h3 class="name"><code>_handleMediaError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>error</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l247"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:247</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>media object has failed and likely will never work</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">error</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleMediaError" class="method item private">
+    <h3 class="name"><code>_handleMediaError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>error</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l247"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:247</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>media object has failed and likely will never work</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">error</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__updatePausePos" class="method item private">
+    <h3 class="name"><code>_updatePausePos</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>pos</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l303"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:303</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Synchronizes the best guess position with the actual current position.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">pos</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The current position in seconds</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__updatePausePos" class="method item private">
+    <h3 class="name"><code>_updatePausePos</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>pos</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l303"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:303</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Synchronizes the best guess position with the actual current position.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">pos</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The current position in seconds</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getCurrentPosition" class="method item">
+    <h3 class="name"><code>getCurrentPosition</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>mediaSuccess</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[mediaError=null]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l231"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:231</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Maps to <a href="http://plugins.cordova.io/#/package/org.apache.cordova.media" target="_blank">Media.getCurrentPosition</a>,
+which is curiously asynchronus and requires a callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">mediaSuccess</code>
+                        <span class="type">Method</span>
+
+
+                    <div class="param-description">
+                        <p>The callback that is passed the current position in seconds.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[mediaError=null]</code>
+                        <span class="type">Method</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>(Optional) The callback to execute if an error occurs.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getCurrentPosition" class="method item">
+    <h3 class="name"><code>getCurrentPosition</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>mediaSuccess</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[mediaError=null]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l231"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:231</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Maps to <a href="http://plugins.cordova.io/#/package/org.apache.cordova.media" target="_blank">Media.getCurrentPosition</a>,
+which is curiously asynchronus and requires a callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">mediaSuccess</code>
+                        <span class="type">Method</span>
+
+
+                    <div class="param-description">
+                        <p>The callback that is passed the current position in seconds.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[mediaError=null]</code>
+                        <span class="type">Method</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>(Optional) The callback to execute if an error occurs.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property__audioSprite" class="property item protected">
+    <h3 class="name"><code>_audioSprite</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l179"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:179</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Boolean value that indicates if we are using an audioSprite</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__audioSprite" class="property item protected">
+    <h3 class="name"><code>_audioSprite</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l179"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:179</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Boolean value that indicates if we are using an audioSprite</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__audioSpriteTimeout" class="property item protected">
+    <h3 class="name"><code>_audioSpriteTimeout</code></h3>
+    <span class="type">Null</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l171"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:171</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A TimeOut used to trigger the end and possible loop of audio sprites.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__audioSpriteTimeout" class="property item protected">
+    <h3 class="name"><code>_audioSpriteTimeout</code></h3>
+    <span class="type">Null</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l171"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:171</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A TimeOut used to trigger the end and possible loop of audio sprites.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__playStartTime" class="property item protected">
+    <h3 class="name"><code>_playStartTime</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l161"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:161</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Used to approximate the playback position by storing the number of milliseconds elapsed since
+1 January 1970 00:00:00 UTC when playing
+Note that if js clock is out of sync with Media playback, this will become increasingly inaccurate.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__playStartTime" class="property item protected">
+    <h3 class="name"><code>_playStartTime</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l161"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:161</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Used to approximate the playback position by storing the number of milliseconds elapsed since
+1 January 1970 00:00:00 UTC when playing
+Note that if js clock is out of sync with Media playback, this will become increasingly inaccurate.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_playWhenScreenLocked" class="property item">
+    <h3 class="name"><code>playWhenScreenLocked</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-0.6.2.combined.js.html#l153"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-0.6.2.combined.js:153</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the playAudioWhenScreenIsLocked property for play calls on iOS devices.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_playWhenScreenLocked" class="property item">
+    <h3 class="name"><code>playWhenScreenLocked</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_cordovaaudioplugin-NEXT.combined.js.html#l153"><code>Scripts\lib\SoundJS\lib\cordovaaudioplugin-NEXT.combined.js:153</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the playAudioWhenScreenIsLocked property for play calls on iOS devices.</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

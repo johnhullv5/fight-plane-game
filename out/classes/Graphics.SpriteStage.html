@@ -1,0 +1,4396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Graphics.SpriteStage</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/ButtonHelper.html">ButtonHelper</a></li>
+                                <li><a href="../classes/DisplayProps.html">DisplayProps</a></li>
+                                <li><a href="../classes/Event.html">Event</a></li>
+                                <li><a href="../classes/EventDispatcher.html">EventDispatcher</a></li>
+                                <li><a href="../classes/Graphics.html">Graphics</a></li>
+                                <li><a href="../classes/Graphics.AbstractLoader.html">Graphics.AbstractLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractMediaLoader.html">Graphics.AbstractMediaLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractPlugin.html">Graphics.AbstractPlugin</a></li>
+                                <li><a href="../classes/Graphics.AbstractRequest.html">Graphics.AbstractRequest</a></li>
+                                <li><a href="../classes/Graphics.AbstractSoundInstance.html">Graphics.AbstractSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.AlphaMapFilter.html">Graphics.AlphaMapFilter</a></li>
+                                <li><a href="../classes/Graphics.AlphaMaskFilter.html">Graphics.AlphaMaskFilter</a></li>
+                                <li><a href="../classes/Graphics.Arc.html">Graphics.Arc</a></li>
+                                <li><a href="../classes/Graphics.ArcTo.html">Graphics.ArcTo</a></li>
+                                <li><a href="../classes/Graphics.AudioSprite.html">Graphics.AudioSprite</a></li>
+                                <li><a href="../classes/Graphics.BeginPath.html">Graphics.BeginPath</a></li>
+                                <li><a href="../classes/Graphics.BezierCurveTo.html">Graphics.BezierCurveTo</a></li>
+                                <li><a href="../classes/Graphics.BinaryLoader.html">Graphics.BinaryLoader</a></li>
+                                <li><a href="../classes/Graphics.Bitmap.html">Graphics.Bitmap</a></li>
+                                <li><a href="../classes/Graphics.BitmapText.html">Graphics.BitmapText</a></li>
+                                <li><a href="../classes/Graphics.BlurFilter.html">Graphics.BlurFilter</a></li>
+                                <li><a href="../classes/Graphics.Circle.html">Graphics.Circle</a></li>
+                                <li><a href="../classes/Graphics.ClosePath.html">Graphics.ClosePath</a></li>
+                                <li><a href="../classes/Graphics.ColorFilter.html">Graphics.ColorFilter</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrix.html">Graphics.ColorMatrix</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrixFilter.html">Graphics.ColorMatrixFilter</a></li>
+                                <li><a href="../classes/Graphics.Container.html">Graphics.Container</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioLoader.html">Graphics.CordovaAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioPlugin.html">Graphics.CordovaAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioSoundInstance.html">Graphics.CordovaAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.CSSLoader.html">Graphics.CSSLoader</a></li>
+                                <li><a href="../classes/Graphics.DataUtils.html">Graphics.DataUtils</a></li>
+                                <li><a href="../classes/Graphics.DisplayObject.html">Graphics.DisplayObject</a></li>
+                                <li><a href="../classes/Graphics.DOMElement.html">Graphics.DOMElement</a></li>
+                                <li><a href="../classes/Graphics.DomUtils.html">Graphics.DomUtils</a></li>
+                                <li><a href="../classes/Graphics.Ease.html">Graphics.Ease</a></li>
+                                <li><a href="../classes/Graphics.EaselJS.html">Graphics.EaselJS</a></li>
+                                <li><a href="../classes/Graphics.Ellipse.html">Graphics.Ellipse</a></li>
+                                <li><a href="../classes/Graphics.ErrorEvent.html">Graphics.ErrorEvent</a></li>
+                                <li><a href="../classes/Graphics.Fill.html">Graphics.Fill</a></li>
+                                <li><a href="../classes/Graphics.Filter.html">Graphics.Filter</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioLoader.html">Graphics.FlashAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioPlugin.html">Graphics.FlashAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioSoundInstance.html">Graphics.FlashAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioPlugin.html">Graphics.HTMLAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioSoundInstance.html">Graphics.HTMLAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioTagPool.html">Graphics.HTMLAudioTagPool</a></li>
+                                <li><a href="../classes/Graphics.ImageLoader.html">Graphics.ImageLoader</a></li>
+                                <li><a href="../classes/Graphics.JavaScriptLoader.html">Graphics.JavaScriptLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONLoader.html">Graphics.JSONLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONPLoader.html">Graphics.JSONPLoader</a></li>
+                                <li><a href="../classes/Graphics.LineTo.html">Graphics.LineTo</a></li>
+                                <li><a href="../classes/Graphics.LoadItem.html">Graphics.LoadItem</a></li>
+                                <li><a href="../classes/Graphics.LoadQueue.html">Graphics.LoadQueue</a></li>
+                                <li><a href="../classes/Graphics.ManifestLoader.html">Graphics.ManifestLoader</a></li>
+                                <li><a href="../classes/Graphics.MediaTagRequest.html">Graphics.MediaTagRequest</a></li>
+                                <li><a href="../classes/Graphics.MotionGuidePlugin.html">Graphics.MotionGuidePlugin</a></li>
+                                <li><a href="../classes/Graphics.MoveTo.html">Graphics.MoveTo</a></li>
+                                <li><a href="../classes/Graphics.MovieClip.html">Graphics.MovieClip</a></li>
+                                <li><a href="../classes/Graphics.MovieClipPlugin.html">Graphics.MovieClipPlugin</a></li>
+                                <li><a href="../classes/Graphics.PlayPropsConfig.html">Graphics.PlayPropsConfig</a></li>
+                                <li><a href="../classes/Graphics.PolyStar.html">Graphics.PolyStar</a></li>
+                                <li><a href="../classes/Graphics.PreloadJS.html">Graphics.PreloadJS</a></li>
+                                <li><a href="../classes/Graphics.ProgressEvent.html">Graphics.ProgressEvent</a></li>
+                                <li><a href="../classes/Graphics.QuadraticCurveTo.html">Graphics.QuadraticCurveTo</a></li>
+                                <li><a href="../classes/Graphics.Rect.html">Graphics.Rect</a></li>
+                                <li><a href="../classes/Graphics.RequestUtils.html">Graphics.RequestUtils</a></li>
+                                <li><a href="../classes/Graphics.RoundRect.html">Graphics.RoundRect</a></li>
+                                <li><a href="../classes/Graphics.Shape.html">Graphics.Shape</a></li>
+                                <li><a href="../classes/Graphics.Sound.html">Graphics.Sound</a></li>
+                                <li><a href="../classes/Graphics.SoundJS.html">Graphics.SoundJS</a></li>
+                                <li><a href="../classes/Graphics.SoundLoader.html">Graphics.SoundLoader</a></li>
+                                <li><a href="../classes/Graphics.Sprite.html">Graphics.Sprite</a></li>
+                                <li><a href="../classes/Graphics.SpriteContainer.html">Graphics.SpriteContainer</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetBuilder.html">Graphics.SpriteSheetBuilder</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetLoader.html">Graphics.SpriteSheetLoader</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetUtils.html">Graphics.SpriteSheetUtils</a></li>
+                                <li><a href="../classes/Graphics.SpriteStage.html">Graphics.SpriteStage</a></li>
+                                <li><a href="../classes/Graphics.Stage.html">Graphics.Stage</a></li>
+                                <li><a href="../classes/Graphics.Stroke.html">Graphics.Stroke</a></li>
+                                <li><a href="../classes/Graphics.StrokeDash.html">Graphics.StrokeDash</a></li>
+                                <li><a href="../classes/Graphics.StrokeStyle.html">Graphics.StrokeStyle</a></li>
+                                <li><a href="../classes/Graphics.SVGLoader.html">Graphics.SVGLoader</a></li>
+                                <li><a href="../classes/Graphics.TagRequest.html">Graphics.TagRequest</a></li>
+                                <li><a href="../classes/Graphics.Text.html">Graphics.Text</a></li>
+                                <li><a href="../classes/Graphics.TextLoader.html">Graphics.TextLoader</a></li>
+                                <li><a href="../classes/Graphics.Timeline.html">Graphics.Timeline</a></li>
+                                <li><a href="../classes/Graphics.Touch.html">Graphics.Touch</a></li>
+                                <li><a href="../classes/Graphics.Tween.html">Graphics.Tween</a></li>
+                                <li><a href="../classes/Graphics.TweenJS.html">Graphics.TweenJS</a></li>
+                                <li><a href="../classes/Graphics.VideoLoader.html">Graphics.VideoLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioLoader.html">Graphics.WebAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioPlugin.html">Graphics.WebAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.WebAudioSoundInstance.html">Graphics.WebAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.XHRRequest.html">Graphics.XHRRequest</a></li>
+                                <li><a href="../classes/Graphics.XMLLoader.html">Graphics.XMLLoader</a></li>
+                                <li><a href="../classes/Matrix2D.html">Matrix2D</a></li>
+                                <li><a href="../classes/MouseEvent.html">MouseEvent</a></li>
+                                <li><a href="../classes/Point.html">Point</a></li>
+                                <li><a href="../classes/Rectangle.html">Rectangle</a></li>
+                                <li><a href="../classes/Shadow.html">Shadow</a></li>
+                                <li><a href="../classes/SpriteSheet.html">SpriteSheet</a></li>
+                                <li><a href="../classes/Ticker.html">Ticker</a></li>
+                                <li><a href="../classes/UID.html">UID</a></li>
+                                <li><a href="../classes/Utility Methods.html">Utility Methods</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Graphics.SpriteStage Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends Stage
+        </div>
+
+        <div class="foundat">
+            Defined in: <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l210"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:210</code></a>
+        </div>
+
+
+</div>
+
+
+<div class="box intro">
+    <p>A sprite stage is the root level Container for an aggressively optimized display list. Each time its Stage/tick
+method is called, it will render its display list to its target canvas. WebGL content is fully compatible with the existing Context2D renderer.
+On devices or browsers that don't support WebGL, content will automatically be rendered via canvas 2D.</p>
+<p>Restrictions:
+- only Sprite, SpriteContainer, BitmapText, Bitmap and DOMElement are allowed to be added to the display list.
+- a child being added (with the exception of DOMElement) MUST have an image or spriteSheet defined on it.
+- a child's image/spriteSheet MUST never change while being on the display list.</p>
+<p><h4>Example</h4>
+This example creates a sprite stage, adds a child to it, then uses <a href="../classes/Ticker.html" class="crosslink">Ticker</a> to update the child
+and redraw the stage using SpriteStage/update.</p>
+<pre class="code prettyprint"><code> var stage = new createjs.SpriteStage("canvasElementId", false, false);
+ stage.updateViewport(800, 600);
+ var image = new createjs.Bitmap("imagePath.png");
+ stage.addChild(image);
+ createjs.Ticker.addEventListener("tick", handleTick);
+ function handleTick(event) {
+     image.x += 10;
+     stage.update();
+ }
+</code></pre>
+<p><strong>Note:</strong> SpriteStage is not included in the minified version of EaselJS.</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_Graphics.SpriteStage" class="method item">
+    <h3 class="name"><code>Graphics.SpriteStage</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>canvas</code>
+                </li>
+                <li class="arg">
+                        <code>preserveDrawingBuffer</code>
+                </li>
+                <li class="arg">
+                        <code>antialias</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l210"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:210</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">canvas</code>
+                        <span class="type">HTMLCanvasElement | String | Object</span>
+
+
+                    <div class="param-description">
+                        <p>A canvas object that the SpriteStage will render to, or the string id
+of a canvas object in the current document.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">preserveDrawingBuffer</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, the canvas is NOT auto-cleared by WebGL (spec discourages true). Useful if you want to use p.autoClear = false.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">antialias</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>Specifies whether or not the browser's WebGL implementation should try to perform antialiasing.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method protected">
+                                <a href="#method__createBuffers">_createBuffers</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__createBuffers">_createBuffers</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__createShader">_createShader</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__createShader">_createShader</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__createShaderProgram">_createShaderProgram</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__createShaderProgram">_createShaderProgram</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__drawToGPU">_drawToGPU</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__drawToGPU">_drawToGPU</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__drawWebGLKids">_drawWebGLKids</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__drawWebGLKids">_drawWebGLKids</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__initializeWebGL">_initializeWebGL</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__initializeWebGL">_initializeWebGL</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__initializeWebGLContext">_initializeWebGLContext</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__initializeWebGLContext">_initializeWebGLContext</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setClearColor">_setClearColor</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setClearColor">_setClearColor</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setMaxBoxesPoints">_setMaxBoxesPoints</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setMaxBoxesPoints">_setMaxBoxesPoints</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setupImageTexture">_setupImageTexture</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setupImageTexture">_setupImageTexture</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setWebGLContext">_setWebGLContext</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__setWebGLContext">_setWebGLContext</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChild">addChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChild">addChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChildAt">addChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChildAt">addChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clear">clear</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clear">clear</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clearImageTexture">clearImageTexture</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clearImageTexture">clearImageTexture</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_draw">draw</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_draw">draw</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_toString">toString</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_toString">toString</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_updateViewport">updateViewport</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_updateViewport">updateViewport</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property protected">
+                                <a href="#property__antialias">_antialias</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__antialias">_antialias</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__clearColor">_clearColor</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__clearColor">_clearColor</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__currentBoxIndex">_currentBoxIndex</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__currentBoxIndex">_currentBoxIndex</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__drawTexture">_drawTexture</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__drawTexture">_drawTexture</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__indices">_indices</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__indices">_indices</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__indicesBuffer">_indicesBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__indicesBuffer">_indicesBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxBoxesPerDraw">_maxBoxesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxBoxesPerDraw">_maxBoxesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxBoxesPointsPerDraw">_maxBoxesPointsPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxBoxesPointsPerDraw">_maxBoxesPointsPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxIndicesPerDraw">_maxIndicesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxIndicesPerDraw">_maxIndicesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxTexturesPerDraw">_maxTexturesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__maxTexturesPerDraw">_maxTexturesPerDraw</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__preserveDrawingBuffer">_preserveDrawingBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__preserveDrawingBuffer">_preserveDrawingBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__projectionMatrix">_projectionMatrix</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__projectionMatrix">_projectionMatrix</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__shaderProgram">_shaderProgram</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__shaderProgram">_shaderProgram</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__vertices">_vertices</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__vertices">_vertices</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__verticesBuffer">_verticesBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__verticesBuffer">_verticesBuffer</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__viewportHeight">_viewportHeight</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__viewportHeight">_viewportHeight</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__viewportWidth">_viewportWidth</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__viewportWidth">_viewportWidth</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__webGLContext">_webGLContext</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__webGLContext">_webGLContext</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__webGLErrorDetected">_webGLErrorDetected</a>
+
+                            </li>
+                            <li class="index-item property protected">
+                                <a href="#property__webGLErrorDetected">_webGLErrorDetected</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_INDICES_PER_BOX">INDICES_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_INDICES_PER_BOX">INDICES_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_isWebGL">isWebGL</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_isWebGL">isWebGL</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_MAX_BOXES_POINTS_INCREMENT">MAX_BOXES_POINTS_INCREMENT</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_MAX_BOXES_POINTS_INCREMENT">MAX_BOXES_POINTS_INCREMENT</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_MAX_INDEX_SIZE">MAX_INDEX_SIZE</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_MAX_INDEX_SIZE">MAX_INDEX_SIZE</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_NUM_VERTEX_PROPERTIES">NUM_VERTEX_PROPERTIES</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_NUM_VERTEX_PROPERTIES">NUM_VERTEX_PROPERTIES</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_NUM_VERTEX_PROPERTIES_PER_BOX">NUM_VERTEX_PROPERTIES_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_NUM_VERTEX_PROPERTIES_PER_BOX">NUM_VERTEX_PROPERTIES_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_POINTS_PER_BOX">POINTS_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_POINTS_PER_BOX">POINTS_PER_BOX</a>
+
+                                    <span class="flag static">static</span>
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method__createBuffers" class="method item protected">
+    <h3 class="name"><code>_createBuffers</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l884"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:884</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up the necessary vertices and indices buffers.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__createBuffers" class="method item protected">
+    <h3 class="name"><code>_createBuffers</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l884"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:884</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up the necessary vertices and indices buffers.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__createShader" class="method item protected">
+    <h3 class="name"><code>_createShader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>type</code>
+                </li>
+                <li class="arg">
+                        <code>str</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">WebGLShader</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l861"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:861</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates a shader from the specified string.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">type</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The type of shader to create.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">str</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The definition for the shader.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLShader</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__createShader" class="method item protected">
+    <h3 class="name"><code>_createShader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>type</code>
+                </li>
+                <li class="arg">
+                        <code>str</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">WebGLShader</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l861"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:861</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates a shader from the specified string.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">type</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The type of shader to create.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">str</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The definition for the shader.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLShader</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__createShaderProgram" class="method item protected">
+    <h3 class="name"><code>_createShaderProgram</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l796"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:796</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates the shader program that's going to be used to draw everything.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__createShaderProgram" class="method item protected">
+    <h3 class="name"><code>_createShaderProgram</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l796"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:796</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Creates the shader program that's going to be used to draw everything.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__drawToGPU" class="method item protected">
+    <h3 class="name"><code>_drawToGPU</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l1092"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:1092</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws all the currently defined boxes to the GPU.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__drawToGPU" class="method item protected">
+    <h3 class="name"><code>_drawToGPU</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l1092"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:1092</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws all the currently defined boxes to the GPU.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__drawWebGLKids" class="method item protected">
+    <h3 class="name"><code>_drawWebGLKids</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>kids</code>
+                </li>
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>parentMVMatrix</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l962"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:962</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draw all the kids into the WebGL context.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">kids</code>
+                        <span class="type">Array</span>
+
+
+                    <div class="param-description">
+                        <p>The list of kids to draw.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">parentMVMatrix</code>
+                        <span class="type"><a href="../classes/Matrix2D.html" class="crosslink">Matrix2D</a></span>
+
+
+                    <div class="param-description">
+                        <p>The parent's global transformation matrix.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__drawWebGLKids" class="method item protected">
+    <h3 class="name"><code>_drawWebGLKids</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>kids</code>
+                </li>
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>parentMVMatrix</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l962"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:962</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draw all the kids into the WebGL context.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">kids</code>
+                        <span class="type">Array</span>
+
+
+                    <div class="param-description">
+                        <p>The list of kids to draw.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">parentMVMatrix</code>
+                        <span class="type"><a href="../classes/Matrix2D.html" class="crosslink">Matrix2D</a></span>
+
+
+                    <div class="param-description">
+                        <p>The parent's global transformation matrix.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__initializeWebGL" class="method item protected">
+    <h3 class="name"><code>_initializeWebGL</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l697"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:697</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Initializes rendering with WebGL using the current canvas element.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__initializeWebGL" class="method item protected">
+    <h3 class="name"><code>_initializeWebGL</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l697"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:697</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Initializes rendering with WebGL using the current canvas element.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__initializeWebGLContext" class="method item protected">
+    <h3 class="name"><code>_initializeWebGLContext</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l727"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:727</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up the WebGL context for rendering.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__initializeWebGLContext" class="method item protected">
+    <h3 class="name"><code>_initializeWebGLContext</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l727"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:727</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up the WebGL context for rendering.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__setClearColor" class="method item protected">
+    <h3 class="name"><code>_setClearColor</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>r</code>
+                </li>
+                <li class="arg">
+                        <code>g</code>
+                </li>
+                <li class="arg">
+                        <code>b</code>
+                </li>
+                <li class="arg">
+                        <code>a</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l776"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:776</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the color to use when the WebGL canvas has been cleared.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">r</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">g</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">b</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">a</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__setClearColor" class="method item protected">
+    <h3 class="name"><code>_setClearColor</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>r</code>
+                </li>
+                <li class="arg">
+                        <code>g</code>
+                </li>
+                <li class="arg">
+                        <code>b</code>
+                </li>
+                <li class="arg">
+                        <code>a</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l776"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:776</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the color to use when the WebGL canvas has been cleared.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">r</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">g</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">b</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">a</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>A number between 0 and 1.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__setMaxBoxesPoints" class="method item protected">
+    <h3 class="name"><code>_setMaxBoxesPoints</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l903"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:903</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Updates the maximum total number of boxes points that can be defined per draw call,
+and updates the buffers with the new array length sizes.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The new this._maxBoxesPointsPerDraw value.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__setMaxBoxesPoints" class="method item protected">
+    <h3 class="name"><code>_setMaxBoxesPoints</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l903"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:903</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Updates the maximum total number of boxes points that can be defined per draw call,
+and updates the buffers with the new array length sizes.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The new this._maxBoxesPointsPerDraw value.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__setupImageTexture" class="method item protected">
+    <h3 class="name"><code>_setupImageTexture</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>image</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">WebGLTexture</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l937"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:937</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up an image's WebGL texture.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">image</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLTexture</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__setupImageTexture" class="method item protected">
+    <h3 class="name"><code>_setupImageTexture</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code>image</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">WebGLTexture</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l937"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:937</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets up an image's WebGL texture.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">WebGLRenderingContext</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas WebGL context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">image</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLTexture</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__setWebGLContext" class="method item protected">
+    <h3 class="name"><code>_setWebGLContext</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">WebGLRenderingContext</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l708"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:708</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the WebGL context to use for future draws.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLRenderingContext</span>:
+                    <p>The newly created context.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__setWebGLContext" class="method item protected">
+    <h3 class="name"><code>_setWebGLContext</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">WebGLRenderingContext</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l708"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:708</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sets the WebGL context to use for future draws.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">WebGLRenderingContext</span>:
+                    <p>The newly created context.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChild" class="method item">
+    <h3 class="name"><code>addChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l521"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:521</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the top of the display list.
+Only children of type SpriteContainer, Sprite, Bitmap, BitmapText, or DOMElement are allowed.
+Children also MUST have either an image or spriteSheet defined on them (unless it's a DOMElement).</p>
+<p><h4>Example</h4>
+container.addChild(bitmapInstance);</p>
+<p>You can also add multiple children at once:</p>
+<pre class="code prettyprint"><code> container.addChild(bitmapInstance, shapeInstance, textInstance);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChild" class="method item">
+    <h3 class="name"><code>addChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l521"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:521</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the top of the display list.
+Only children of type SpriteContainer, Sprite, Bitmap, BitmapText, or DOMElement are allowed.
+Children also MUST have either an image or spriteSheet defined on them (unless it's a DOMElement).</p>
+<p><h4>Example</h4>
+container.addChild(bitmapInstance);</p>
+<p>You can also add multiple children at once:</p>
+<pre class="code prettyprint"><code> container.addChild(bitmapInstance, shapeInstance, textInstance);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChildAt" class="method item">
+    <h3 class="name"><code>addChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l546"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:546</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the display list at the specified index, bumping children at equal or greater indexes up one, and
+setting its parent to this Container.
+Only children of type SpriteContainer, Sprite, Bitmap, BitmapText, or DOMElement are allowed.
+Children also MUST have either an image or spriteSheet defined on them (unless it's a DOMElement).</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> addChildAt(child1, index);
+</code></pre>
+<p>You can also add multiple children, such as:</p>
+<pre class="code prettyprint"><code> addChildAt(child1, child2, ..., index);
+</code></pre>
+<p>The index must be between 0 and numChildren. For example, to add myShape under otherShape in the display list,
+you could use:</p>
+<pre class="code prettyprint"><code> container.addChildAt(myShape, container.getChildIndex(otherShape));
+</code></pre>
+<p>This would also bump otherShape's index up by one. Fails silently if the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index to add the child at.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>Returns the last child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChildAt" class="method item">
+    <h3 class="name"><code>addChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l546"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:546</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the display list at the specified index, bumping children at equal or greater indexes up one, and
+setting its parent to this Container.
+Only children of type SpriteContainer, Sprite, Bitmap, BitmapText, or DOMElement are allowed.
+Children also MUST have either an image or spriteSheet defined on them (unless it's a DOMElement).</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> addChildAt(child1, index);
+</code></pre>
+<p>You can also add multiple children, such as:</p>
+<pre class="code prettyprint"><code> addChildAt(child1, child2, ..., index);
+</code></pre>
+<p>The index must be between 0 and numChildren. For example, to add myShape under otherShape in the display list,
+you could use:</p>
+<pre class="code prettyprint"><code> container.addChildAt(myShape, container.getChildIndex(otherShape));
+</code></pre>
+<p>This would also bump otherShape's index up by one. Fails silently if the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index to add the child at.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>Returns the last child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_clear" class="method item">
+    <h3 class="name"><code>clear</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l617"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:617</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Clears the target canvas. Useful if Stage/autoClear:property is set to <code>false</code>.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_clear" class="method item">
+    <h3 class="name"><code>clear</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l617"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:617</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Clears the target canvas. Useful if Stage/autoClear:property is set to <code>false</code>.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_clearImageTexture" class="method item">
+    <h3 class="name"><code>clearImageTexture</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>image</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l677"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:677</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Clears an image's texture to free it up for garbage collection.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">image</code>
+                        <span class="type">HTMLImageElement</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_clearImageTexture" class="method item">
+    <h3 class="name"><code>clearImageTexture</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>image</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l677"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:677</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Clears an image's texture to free it up for garbage collection.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">image</code>
+                        <span class="type">HTMLImageElement</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[ignoreCache=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l635"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:635</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws the stage into the specified context (using WebGL) ignoring its visible, alpha, shadow, and transform.
+If WebGL is not supported in the browser, it will default to a 2D context.
+Returns true if the draw was handled (useful for overriding functionality).</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">CanvasRenderingContext2D</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas 2D context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[ignoreCache=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates whether the draw operation should ignore any current cache.
+For example, used for drawing the cache (to prevent it from simply drawing an existing cache back
+into itself).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[ignoreCache=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l635"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:635</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws the stage into the specified context (using WebGL) ignoring its visible, alpha, shadow, and transform.
+If WebGL is not supported in the browser, it will default to a 2D context.
+Returns true if the draw was handled (useful for overriding functionality).</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">CanvasRenderingContext2D</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas 2D context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[ignoreCache=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates whether the draw operation should ignore any current cache.
+For example, used for drawing the cache (to prevent it from simply drawing an existing cache back
+into itself).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_toString" class="method item">
+    <h3 class="name"><code>toString</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l686"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:686</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a string representation of this object.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>a string representation of the instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_toString" class="method item">
+    <h3 class="name"><code>toString</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l686"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:686</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a string representation of this object.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>a string representation of the instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_updateViewport" class="method item">
+    <h3 class="name"><code>updateViewport</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>width</code>
+                </li>
+                <li class="arg">
+                        <code>height</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l656"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:656</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Update the WebGL viewport. Note that this does NOT update the canvas element's width/height.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">width</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">height</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_updateViewport" class="method item">
+    <h3 class="name"><code>updateViewport</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>width</code>
+                </li>
+                <li class="arg">
+                        <code>height</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l656"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:656</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Update the WebGL viewport. Note that this does NOT update the canvas element's width/height.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">width</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">height</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property__antialias" class="property item protected">
+    <h3 class="name"><code>_antialias</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l260"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:260</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Specifies whether or not the browser's WebGL implementation should try to perform antialiasing.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property__antialias" class="property item protected">
+    <h3 class="name"><code>_antialias</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l260"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:260</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Specifies whether or not the browser's WebGL implementation should try to perform antialiasing.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property__clearColor" class="property item protected">
+    <h3 class="name"><code>_clearColor</code></h3>
+    <span class="type">Object</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l315"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:315</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The color to use when the WebGL canvas has been cleared.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__clearColor" class="property item protected">
+    <h3 class="name"><code>_clearColor</code></h3>
+    <span class="type">Object</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l315"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:315</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The color to use when the WebGL canvas has been cleared.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__currentBoxIndex" class="property item protected">
+    <h3 class="name"><code>_currentBoxIndex</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l405"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:405</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current box index being defined for drawing.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> -1</p>
+
+
+</div>
+<div id="property__currentBoxIndex" class="property item protected">
+    <h3 class="name"><code>_currentBoxIndex</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l405"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:405</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current box index being defined for drawing.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> -1</p>
+
+
+</div>
+<div id="property__drawTexture" class="property item protected">
+    <h3 class="name"><code>_drawTexture</code></h3>
+    <span class="type">WebGLTexture</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l414"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:414</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current texture that will be used to draw into the GPU.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__drawTexture" class="property item protected">
+    <h3 class="name"><code>_drawTexture</code></h3>
+    <span class="type">WebGLTexture</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l414"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:414</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current texture that will be used to draw into the GPU.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__indices" class="property item protected">
+    <h3 class="name"><code>_indices</code></h3>
+    <span class="type">Uint16Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l387"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:387</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The indices to the vertices defined in this._vertices.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__indices" class="property item protected">
+    <h3 class="name"><code>_indices</code></h3>
+    <span class="type">Uint16Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l387"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:387</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The indices to the vertices defined in this._vertices.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__indicesBuffer" class="property item protected">
+    <h3 class="name"><code>_indicesBuffer</code></h3>
+    <span class="type">WebGLBuffer</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l396"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:396</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The buffer that contains all the indices data.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__indicesBuffer" class="property item protected">
+    <h3 class="name"><code>_indicesBuffer</code></h3>
+    <span class="type">WebGLBuffer</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l396"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:396</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The buffer that contains all the indices data.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxBoxesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxBoxesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l342"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:342</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of boxes (sprites) that can be drawn in one draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxBoxesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxBoxesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l342"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:342</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of boxes (sprites) that can be drawn in one draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxBoxesPointsPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxBoxesPointsPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l333"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:333</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum total number of boxes points that can be defined per draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxBoxesPointsPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxBoxesPointsPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l333"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:333</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum total number of boxes points that can be defined per draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxIndicesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxIndicesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l351"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:351</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of indices that can be drawn in one draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxIndicesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxIndicesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l351"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:351</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of indices that can be drawn in one draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__maxTexturesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxTexturesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l324"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:324</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of textures WebGL can work with per draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property__maxTexturesPerDraw" class="property item protected">
+    <h3 class="name"><code>_maxTexturesPerDraw</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l324"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:324</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum number of textures WebGL can work with per draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property__preserveDrawingBuffer" class="property item protected">
+    <h3 class="name"><code>_preserveDrawingBuffer</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l249"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:249</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Specifies whether or not the canvas is auto-cleared by WebGL. Spec discourages true.
+If true, the canvas is NOT auto-cleared by WebGL. Value is ignored if <code>_alphaEnabled</code> is false.
+Useful if you want to use <code>autoClear = false</code>.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property__preserveDrawingBuffer" class="property item protected">
+    <h3 class="name"><code>_preserveDrawingBuffer</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l249"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:249</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Specifies whether or not the canvas is auto-cleared by WebGL. Spec discourages true.
+If true, the canvas is NOT auto-cleared by WebGL. Value is ignored if <code>_alphaEnabled</code> is false.
+Useful if you want to use <code>autoClear = false</code>.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property__projectionMatrix" class="property item protected">
+    <h3 class="name"><code>_projectionMatrix</code></h3>
+    <span class="type">Float32Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l287"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:287</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A 2D projection matrix used to convert WebGL's clipspace into normal pixels.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__projectionMatrix" class="property item protected">
+    <h3 class="name"><code>_projectionMatrix</code></h3>
+    <span class="type">Float32Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l287"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:287</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A 2D projection matrix used to convert WebGL's clipspace into normal pixels.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__shaderProgram" class="property item protected">
+    <h3 class="name"><code>_shaderProgram</code></h3>
+    <span class="type">WebGLProgram</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l360"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:360</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The shader program used to draw everything.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__shaderProgram" class="property item protected">
+    <h3 class="name"><code>_shaderProgram</code></h3>
+    <span class="type">WebGLProgram</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l360"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:360</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The shader program used to draw everything.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__vertices" class="property item protected">
+    <h3 class="name"><code>_vertices</code></h3>
+    <span class="type">Float32Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l369"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:369</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The vertices data for the current draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__vertices" class="property item protected">
+    <h3 class="name"><code>_vertices</code></h3>
+    <span class="type">Float32Array</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l369"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:369</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The vertices data for the current draw call.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__verticesBuffer" class="property item protected">
+    <h3 class="name"><code>_verticesBuffer</code></h3>
+    <span class="type">WebGLBuffer</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l378"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:378</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The buffer that contains all the vertices data.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__verticesBuffer" class="property item protected">
+    <h3 class="name"><code>_verticesBuffer</code></h3>
+    <span class="type">WebGLBuffer</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l378"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:378</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The buffer that contains all the vertices data.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__viewportHeight" class="property item protected">
+    <h3 class="name"><code>_viewportHeight</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l278"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:278</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The height of the canvas element.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property__viewportHeight" class="property item protected">
+    <h3 class="name"><code>_viewportHeight</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l278"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:278</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The height of the canvas element.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property__viewportWidth" class="property item protected">
+    <h3 class="name"><code>_viewportWidth</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l269"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:269</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The width of the canvas element.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property__viewportWidth" class="property item protected">
+    <h3 class="name"><code>_viewportWidth</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l269"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:269</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The width of the canvas element.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property__webGLContext" class="property item protected">
+    <h3 class="name"><code>_webGLContext</code></h3>
+    <span class="type">WebGLRenderingContext</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l296"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:296</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current WebGL canvas context.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__webGLContext" class="property item protected">
+    <h3 class="name"><code>_webGLContext</code></h3>
+    <span class="type">WebGLRenderingContext</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l296"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:296</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The current WebGL canvas context.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property__webGLErrorDetected" class="property item protected">
+    <h3 class="name"><code>_webGLErrorDetected</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l305"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:305</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether or not an error has been detected when dealing with WebGL.
+If the is true, the behavior should be to use Canvas 2D rendering instead.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property__webGLErrorDetected" class="property item protected">
+    <h3 class="name"><code>_webGLErrorDetected</code></h3>
+    <span class="type">Boolean</span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l305"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:305</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether or not an error has been detected when dealing with WebGL.
+If the is true, the behavior should be to use Canvas 2D rendering instead.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property_INDICES_PER_BOX" class="property item">
+    <h3 class="name"><code>INDICES_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l465"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:465</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of indices needed to define a box using triangles.
+6 indices = 2 triangles = 1 box</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_INDICES_PER_BOX" class="property item">
+    <h3 class="name"><code>INDICES_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l465"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:465</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of indices needed to define a box using triangles.
+6 indices = 2 triangles = 1 box</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_isWebGL" class="property item">
+    <h3 class="name"><code>isWebGL</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l502"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:502</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether WebGL is being used for rendering. For example, this would be false if WebGL is not
+supported in the browser.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_isWebGL" class="property item">
+    <h3 class="name"><code>isWebGL</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l502"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:502</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether WebGL is being used for rendering. For example, this would be false if WebGL is not
+supported in the browser.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_MAX_BOXES_POINTS_INCREMENT" class="property item">
+    <h3 class="name"><code>MAX_BOXES_POINTS_INCREMENT</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l486"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:486</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The amount used to increment p._maxBoxesPointsPerDraw when the maximum has been reached.
+If the maximum size of element index WebGL allows for (SpriteStage.MAX_INDEX_SIZE) was used,
+the array size for p._vertices would equal 1280kb and p._indices 192kb. But since mobile phones
+with less memory need to be accounted for, the maximum size is somewhat arbitrarily divided by 4,
+reducing the array sizes to 320kb and 48kb respectively.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_MAX_BOXES_POINTS_INCREMENT" class="property item">
+    <h3 class="name"><code>MAX_BOXES_POINTS_INCREMENT</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l486"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:486</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The amount used to increment p._maxBoxesPointsPerDraw when the maximum has been reached.
+If the maximum size of element index WebGL allows for (SpriteStage.MAX_INDEX_SIZE) was used,
+the array size for p._vertices would equal 1280kb and p._indices 192kb. But since mobile phones
+with less memory need to be accounted for, the maximum size is somewhat arbitrarily divided by 4,
+reducing the array sizes to 320kb and 48kb respectively.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_MAX_INDEX_SIZE" class="property item">
+    <h3 class="name"><code>MAX_INDEX_SIZE</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l476"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:476</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum size WebGL allows for element index numbers: 16 bit unsigned integer</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_MAX_INDEX_SIZE" class="property item">
+    <h3 class="name"><code>MAX_INDEX_SIZE</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l476"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:476</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The maximum size WebGL allows for element index numbers: 16 bit unsigned integer</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_NUM_VERTEX_PROPERTIES" class="property item">
+    <h3 class="name"><code>NUM_VERTEX_PROPERTIES</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l434"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:434</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of properties defined per vertex in p._verticesBuffer.
+x, y, textureU, textureV, alpha</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_NUM_VERTEX_PROPERTIES" class="property item">
+    <h3 class="name"><code>NUM_VERTEX_PROPERTIES</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l434"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:434</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of properties defined per vertex in p._verticesBuffer.
+x, y, textureU, textureV, alpha</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_NUM_VERTEX_PROPERTIES_PER_BOX" class="property item">
+    <h3 class="name"><code>NUM_VERTEX_PROPERTIES_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l455"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:455</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of vertex properties per box.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_NUM_VERTEX_PROPERTIES_PER_BOX" class="property item">
+    <h3 class="name"><code>NUM_VERTEX_PROPERTIES_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l455"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:455</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of vertex properties per box.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_POINTS_PER_BOX" class="property item">
+    <h3 class="name"><code>POINTS_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-0.8.2.combined.js.html#l445"><code>Scripts\lib\EaselJS\lib\webgl-0.8.2.combined.js:445</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of points in a box...obviously :)</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_POINTS_PER_BOX" class="property item">
+    <h3 class="name"><code>POINTS_PER_BOX</code></h3>
+    <span class="type">Number</span>
+
+
+
+        <span class="flag final">final</span>
+
+        <span class="flag static">static</span>
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_webgl-NEXT.combined.js.html#l445"><code>Scripts\lib\EaselJS\lib\webgl-NEXT.combined.js:445</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The number of points in a box...obviously :)</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

@@ -7,6 +7,9 @@ var objects;
 (function (objects) {
     var Button = (function (_super) {
         __extends(Button, _super);
+        /**
+         *
+         */
         function Button(pathString, x, y, isCentered) {
             _super.call(this, pathString);
             //"../../Assets/images/startButton.png"

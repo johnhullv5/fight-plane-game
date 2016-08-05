@@ -27,7 +27,11 @@ function gameLoop():void {
 function startButtonClick(event:createjs.MouseEvent){
     helloLabel.text = "clicked!";
 }
-
+/**
+ * this is the main game function
+ * @methdos: main
+ * @returns {void} 
+ */
 function main():void{
 
     helloLabel = new createjs.Text("Hello World!","40px Consolas","#000000");
@@ -40,6 +44,8 @@ function main():void{
     stage.addChild(startButton);
 
     startButton.on("click",startButtonClick);
+
+    
 
     
 

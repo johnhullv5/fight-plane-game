@@ -1,5 +1,8 @@
 module objects{
     export class Button extends createjs.Bitmap {
+/**
+ * 
+ */
         constructor(pathString: string,x:number,y:number,isCentered:boolean){
             super(pathString);
 //"../../Assets/images/startButton.png"

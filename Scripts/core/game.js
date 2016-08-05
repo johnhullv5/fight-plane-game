@@ -19,6 +19,11 @@ function gameLoop() {
 function startButtonClick(event) {
     helloLabel.text = "clicked!";
 }
+/**
+ * this is the main game function
+ * @methdos: main
+ * @returns {void}
+ */
 function main() {
     helloLabel = new createjs.Text("Hello World!", "40px Consolas", "#000000");
     helloLabel.regX = helloLabel.getMeasuredWidth() * 0.9;

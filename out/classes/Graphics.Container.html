@@ -1,0 +1,4529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Graphics.Container</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/ButtonHelper.html">ButtonHelper</a></li>
+                                <li><a href="../classes/DisplayProps.html">DisplayProps</a></li>
+                                <li><a href="../classes/Event.html">Event</a></li>
+                                <li><a href="../classes/EventDispatcher.html">EventDispatcher</a></li>
+                                <li><a href="../classes/Graphics.html">Graphics</a></li>
+                                <li><a href="../classes/Graphics.AbstractLoader.html">Graphics.AbstractLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractMediaLoader.html">Graphics.AbstractMediaLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractPlugin.html">Graphics.AbstractPlugin</a></li>
+                                <li><a href="../classes/Graphics.AbstractRequest.html">Graphics.AbstractRequest</a></li>
+                                <li><a href="../classes/Graphics.AbstractSoundInstance.html">Graphics.AbstractSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.AlphaMapFilter.html">Graphics.AlphaMapFilter</a></li>
+                                <li><a href="../classes/Graphics.AlphaMaskFilter.html">Graphics.AlphaMaskFilter</a></li>
+                                <li><a href="../classes/Graphics.Arc.html">Graphics.Arc</a></li>
+                                <li><a href="../classes/Graphics.ArcTo.html">Graphics.ArcTo</a></li>
+                                <li><a href="../classes/Graphics.AudioSprite.html">Graphics.AudioSprite</a></li>
+                                <li><a href="../classes/Graphics.BeginPath.html">Graphics.BeginPath</a></li>
+                                <li><a href="../classes/Graphics.BezierCurveTo.html">Graphics.BezierCurveTo</a></li>
+                                <li><a href="../classes/Graphics.BinaryLoader.html">Graphics.BinaryLoader</a></li>
+                                <li><a href="../classes/Graphics.Bitmap.html">Graphics.Bitmap</a></li>
+                                <li><a href="../classes/Graphics.BitmapText.html">Graphics.BitmapText</a></li>
+                                <li><a href="../classes/Graphics.BlurFilter.html">Graphics.BlurFilter</a></li>
+                                <li><a href="../classes/Graphics.Circle.html">Graphics.Circle</a></li>
+                                <li><a href="../classes/Graphics.ClosePath.html">Graphics.ClosePath</a></li>
+                                <li><a href="../classes/Graphics.ColorFilter.html">Graphics.ColorFilter</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrix.html">Graphics.ColorMatrix</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrixFilter.html">Graphics.ColorMatrixFilter</a></li>
+                                <li><a href="../classes/Graphics.Container.html">Graphics.Container</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioLoader.html">Graphics.CordovaAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioPlugin.html">Graphics.CordovaAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioSoundInstance.html">Graphics.CordovaAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.CSSLoader.html">Graphics.CSSLoader</a></li>
+                                <li><a href="../classes/Graphics.DataUtils.html">Graphics.DataUtils</a></li>
+                                <li><a href="../classes/Graphics.DisplayObject.html">Graphics.DisplayObject</a></li>
+                                <li><a href="../classes/Graphics.DOMElement.html">Graphics.DOMElement</a></li>
+                                <li><a href="../classes/Graphics.DomUtils.html">Graphics.DomUtils</a></li>
+                                <li><a href="../classes/Graphics.Ease.html">Graphics.Ease</a></li>
+                                <li><a href="../classes/Graphics.EaselJS.html">Graphics.EaselJS</a></li>
+                                <li><a href="../classes/Graphics.Ellipse.html">Graphics.Ellipse</a></li>
+                                <li><a href="../classes/Graphics.ErrorEvent.html">Graphics.ErrorEvent</a></li>
+                                <li><a href="../classes/Graphics.Fill.html">Graphics.Fill</a></li>
+                                <li><a href="../classes/Graphics.Filter.html">Graphics.Filter</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioLoader.html">Graphics.FlashAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioPlugin.html">Graphics.FlashAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioSoundInstance.html">Graphics.FlashAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioPlugin.html">Graphics.HTMLAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioSoundInstance.html">Graphics.HTMLAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioTagPool.html">Graphics.HTMLAudioTagPool</a></li>
+                                <li><a href="../classes/Graphics.ImageLoader.html">Graphics.ImageLoader</a></li>
+                                <li><a href="../classes/Graphics.JavaScriptLoader.html">Graphics.JavaScriptLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONLoader.html">Graphics.JSONLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONPLoader.html">Graphics.JSONPLoader</a></li>
+                                <li><a href="../classes/Graphics.LineTo.html">Graphics.LineTo</a></li>
+                                <li><a href="../classes/Graphics.LoadItem.html">Graphics.LoadItem</a></li>
+                                <li><a href="../classes/Graphics.LoadQueue.html">Graphics.LoadQueue</a></li>
+                                <li><a href="../classes/Graphics.ManifestLoader.html">Graphics.ManifestLoader</a></li>
+                                <li><a href="../classes/Graphics.MediaTagRequest.html">Graphics.MediaTagRequest</a></li>
+                                <li><a href="../classes/Graphics.MotionGuidePlugin.html">Graphics.MotionGuidePlugin</a></li>
+                                <li><a href="../classes/Graphics.MoveTo.html">Graphics.MoveTo</a></li>
+                                <li><a href="../classes/Graphics.MovieClip.html">Graphics.MovieClip</a></li>
+                                <li><a href="../classes/Graphics.MovieClipPlugin.html">Graphics.MovieClipPlugin</a></li>
+                                <li><a href="../classes/Graphics.PlayPropsConfig.html">Graphics.PlayPropsConfig</a></li>
+                                <li><a href="../classes/Graphics.PolyStar.html">Graphics.PolyStar</a></li>
+                                <li><a href="../classes/Graphics.PreloadJS.html">Graphics.PreloadJS</a></li>
+                                <li><a href="../classes/Graphics.ProgressEvent.html">Graphics.ProgressEvent</a></li>
+                                <li><a href="../classes/Graphics.QuadraticCurveTo.html">Graphics.QuadraticCurveTo</a></li>
+                                <li><a href="../classes/Graphics.Rect.html">Graphics.Rect</a></li>
+                                <li><a href="../classes/Graphics.RequestUtils.html">Graphics.RequestUtils</a></li>
+                                <li><a href="../classes/Graphics.RoundRect.html">Graphics.RoundRect</a></li>
+                                <li><a href="../classes/Graphics.Shape.html">Graphics.Shape</a></li>
+                                <li><a href="../classes/Graphics.Sound.html">Graphics.Sound</a></li>
+                                <li><a href="../classes/Graphics.SoundJS.html">Graphics.SoundJS</a></li>
+                                <li><a href="../classes/Graphics.SoundLoader.html">Graphics.SoundLoader</a></li>
+                                <li><a href="../classes/Graphics.Sprite.html">Graphics.Sprite</a></li>
+                                <li><a href="../classes/Graphics.SpriteContainer.html">Graphics.SpriteContainer</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetBuilder.html">Graphics.SpriteSheetBuilder</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetLoader.html">Graphics.SpriteSheetLoader</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetUtils.html">Graphics.SpriteSheetUtils</a></li>
+                                <li><a href="../classes/Graphics.SpriteStage.html">Graphics.SpriteStage</a></li>
+                                <li><a href="../classes/Graphics.Stage.html">Graphics.Stage</a></li>
+                                <li><a href="../classes/Graphics.Stroke.html">Graphics.Stroke</a></li>
+                                <li><a href="../classes/Graphics.StrokeDash.html">Graphics.StrokeDash</a></li>
+                                <li><a href="../classes/Graphics.StrokeStyle.html">Graphics.StrokeStyle</a></li>
+                                <li><a href="../classes/Graphics.SVGLoader.html">Graphics.SVGLoader</a></li>
+                                <li><a href="../classes/Graphics.TagRequest.html">Graphics.TagRequest</a></li>
+                                <li><a href="../classes/Graphics.Text.html">Graphics.Text</a></li>
+                                <li><a href="../classes/Graphics.TextLoader.html">Graphics.TextLoader</a></li>
+                                <li><a href="../classes/Graphics.Timeline.html">Graphics.Timeline</a></li>
+                                <li><a href="../classes/Graphics.Touch.html">Graphics.Touch</a></li>
+                                <li><a href="../classes/Graphics.Tween.html">Graphics.Tween</a></li>
+                                <li><a href="../classes/Graphics.TweenJS.html">Graphics.TweenJS</a></li>
+                                <li><a href="../classes/Graphics.VideoLoader.html">Graphics.VideoLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioLoader.html">Graphics.WebAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioPlugin.html">Graphics.WebAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.WebAudioSoundInstance.html">Graphics.WebAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.XHRRequest.html">Graphics.XHRRequest</a></li>
+                                <li><a href="../classes/Graphics.XMLLoader.html">Graphics.XMLLoader</a></li>
+                                <li><a href="../classes/Matrix2D.html">Matrix2D</a></li>
+                                <li><a href="../classes/MouseEvent.html">MouseEvent</a></li>
+                                <li><a href="../classes/Point.html">Point</a></li>
+                                <li><a href="../classes/Rectangle.html">Rectangle</a></li>
+                                <li><a href="../classes/Shadow.html">Shadow</a></li>
+                                <li><a href="../classes/SpriteSheet.html">SpriteSheet</a></li>
+                                <li><a href="../classes/Ticker.html">Ticker</a></li>
+                                <li><a href="../classes/UID.html">UID</a></li>
+                                <li><a href="../classes/Utility Methods.html">Utility Methods</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Graphics.Container Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends DisplayObject
+        </div>
+
+        <div class="foundat">
+            Defined in: <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7197"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7197</code></a>
+        </div>
+
+
+</div>
+
+
+<div class="box intro">
+    <p>A Container is a nestable display list that allows you to work with compound display elements. For  example you could
+group arm, leg, torso and head Bitmap instances together into a Person Container, and
+transform them as a group, while still being able to move the individual parts relative to each other. Children of
+containers have their <code>transform</code> and <code>alpha</code> properties concatenated with their parent
+Container.</p>
+<p>For example, a Shape with x=100 and alpha=0.5, placed in a Container with <code>x=50</code>
+and <code>alpha=0.7</code> will be rendered to the canvas at <code>x=150</code> and <code>alpha=0.35</code>.
+Containers have some overhead, so you generally shouldn't create a Container to hold a single child.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> var container = new createjs.Container();
+ container.addChild(bitmapInstance, shapeInstance);
+ container.x = 100;</code></pre>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_Graphics.Container" class="method item">
+    <h3 class="name"><code>Graphics.Container</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7197"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7197</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method protected">
+                                <a href="#method__getBounds">_getBounds</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__getBounds">_getBounds</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__getObjectsUnderPoint">_getObjectsUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__getObjectsUnderPoint">_getObjectsUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__testMask">_testMask</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__testMask">_testMask</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__tick">_tick</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method__tick">_tick</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChild">addChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChild">addChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChildAt">addChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addChildAt">addChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clone">clone</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clone">clone</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method_cloneChildren">cloneChildren</a>
+
+                            </li>
+                            <li class="index-item method protected">
+                                <a href="#method_cloneChildren">cloneChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_contains">contains</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_contains">contains</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_draw">draw</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_draw">draw</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildAt">getChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildAt">getChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildByName">getChildByName</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildByName">getChildByName</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildIndex">getChildIndex</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getChildIndex">getChildIndex</a>
+
+                            </li>
+                            <li class="index-item method deprecated">
+                                <a href="#method_getNumChildren">getNumChildren</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item method deprecated">
+                                <a href="#method_getNumChildren">getNumChildren</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getObjectsUnderPoint">getObjectsUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getObjectsUnderPoint">getObjectsUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getObjectUnderPoint">getObjectUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getObjectUnderPoint">getObjectUnderPoint</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_hitTest">hitTest</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_hitTest">hitTest</a>
+
+                            </li>
+                            <li class="index-item method deprecated">
+                                <a href="#method_initialize">initialize</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item method deprecated">
+                                <a href="#method_initialize">initialize</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isVisible">isVisible</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isVisible">isVisible</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeAllChildren">removeAllChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeAllChildren">removeAllChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeChild">removeChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeChild">removeChild</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeChildAt">removeChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeChildAt">removeChildAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_setChildIndex">setChildIndex</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_setChildIndex">setChildIndex</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_sortChildren">sortChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_sortChildren">sortChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_swapChildren">swapChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_swapChildren">swapChildren</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_swapChildrenAt">swapChildrenAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_swapChildrenAt">swapChildrenAt</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_toString">toString</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_toString">toString</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property">
+                                <a href="#property_children">children</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_children">children</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_mouseChildren">mouseChildren</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_mouseChildren">mouseChildren</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_numChildren">numChildren</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_numChildren">numChildren</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_tickChildren">tickChildren</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_tickChildren">tickChildren</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method__getBounds" class="method item protected">
+    <h3 class="name"><code>_getBounds</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>matrix</code>
+                </li>
+                <li class="arg">
+                        <code>ignoreTransform</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Rectangle.html" class="crosslink">Rectangle</a></span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7823"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7823</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">matrix</code>
+                        <span class="type"><a href="../classes/Matrix2D.html" class="crosslink">Matrix2D</a></span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">ignoreTransform</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, does not apply this object's transform.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/Rectangle.html" class="crosslink">Rectangle</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__getBounds" class="method item protected">
+    <h3 class="name"><code>_getBounds</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>matrix</code>
+                </li>
+                <li class="arg">
+                        <code>ignoreTransform</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Rectangle.html" class="crosslink">Rectangle</a></span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7823"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7823</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">matrix</code>
+                        <span class="type"><a href="../classes/Matrix2D.html" class="crosslink">Matrix2D</a></span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">ignoreTransform</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, does not apply this object's transform.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/Rectangle.html" class="crosslink">Rectangle</a></span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__getObjectsUnderPoint" class="method item protected">
+    <h3 class="name"><code>_getObjectsUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code>arr</code>
+                </li>
+                <li class="arg">
+                        <code>mouse</code>
+                </li>
+                <li class="arg">
+                        <code>activeListener</code>
+                </li>
+                <li class="arg">
+                        <code>currentDepth</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7738"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7738</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">arr</code>
+                        <span class="type">Array</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">mouse</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, it will respect mouse interaction properties like mouseEnabled, mouseChildren, and active listeners.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">activeListener</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, there is an active mouse event listener on a parent object.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">currentDepth</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates the current depth of the search.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__getObjectsUnderPoint" class="method item protected">
+    <h3 class="name"><code>_getObjectsUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code>arr</code>
+                </li>
+                <li class="arg">
+                        <code>mouse</code>
+                </li>
+                <li class="arg">
+                        <code>activeListener</code>
+                </li>
+                <li class="arg">
+                        <code>currentDepth</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7738"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7738</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">arr</code>
+                        <span class="type">Array</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">mouse</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, it will respect mouse interaction properties like mouseEnabled, mouseChildren, and active listeners.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">activeListener</code>
+                        <span class="type">Boolean</span>
+
+
+                    <div class="param-description">
+                        <p>If true, there is an active mouse event listener on a parent object.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">currentDepth</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates the current depth of the search.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method__testMask" class="method item protected">
+    <h3 class="name"><code>_testMask</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7792"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7792</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>Indicates whether the x/y is within the masked region.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__testMask" class="method item protected">
+    <h3 class="name"><code>_testMask</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7792"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7792</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>Indicates whether the x/y is within the masked region.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__tick" class="method item protected">
+    <h3 class="name"><code>_tick</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>evtObj</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7707"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7707</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">evtObj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>An event object that will be dispatched to all tick listeners. This object is reused between dispatchers to reduce construction &amp; GC costs.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__tick" class="method item protected">
+    <h3 class="name"><code>_tick</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>evtObj</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7707"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7707</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">evtObj</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>An event object that will be dispatched to all tick listeners. This object is reused between dispatchers to reduce construction &amp; GC costs.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_addChild" class="method item">
+    <h3 class="name"><code>addChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7331"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7331</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the top of the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code>    container.addChild(bitmapInstance);
+</code></pre>
+<p>You can also add multiple children at once:</p>
+<pre class="code prettyprint"><code>    container.addChild(bitmapInstance, shapeInstance, textInstance);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChild" class="method item">
+    <h3 class="name"><code>addChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7331"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7331</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the top of the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code>    container.addChild(bitmapInstance);
+</code></pre>
+<p>You can also add multiple children at once:</p>
+<pre class="code prettyprint"><code>    container.addChild(bitmapInstance, shapeInstance, textInstance);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChildAt" class="method item">
+    <h3 class="name"><code>addChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7360"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7360</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the display list at the specified index, bumping children at equal or greater indexes up one, and
+setting its parent to this Container.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> addChildAt(child1, index);
+</code></pre>
+<p>You can also add multiple children, such as:</p>
+<pre class="code prettyprint"><code> addChildAt(child1, child2, ..., index);
+</code></pre>
+<p>The index must be between 0 and numChildren. For example, to add myShape under otherShape in the display list,
+you could use:</p>
+<pre class="code prettyprint"><code> container.addChildAt(myShape, container.getChildIndex(otherShape));
+</code></pre>
+<p>This would also bump otherShape's index up by one. Fails silently if the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index to add the child at.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>Returns the last child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addChildAt" class="method item">
+    <h3 class="name"><code>addChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7360"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7360</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a child to the display list at the specified index, bumping children at equal or greater indexes up one, and
+setting its parent to this Container.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> addChildAt(child1, index);
+</code></pre>
+<p>You can also add multiple children, such as:</p>
+<pre class="code prettyprint"><code> addChildAt(child1, child2, ..., index);
+</code></pre>
+<p>The index must be between 0 and numChildren. For example, to add myShape under otherShape in the display list,
+you could use:</p>
+<pre class="code prettyprint"><code> container.addChildAt(myShape, container.getChildIndex(otherShape));
+</code></pre>
+<p>This would also bump otherShape's index up by one. Fails silently if the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The display object to add.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index to add the child at.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>Returns the last child that was added, or the last child if multiple children were added.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_clone" class="method item">
+    <h3 class="name"><code>clone</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[recursive=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Container</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7682"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7682</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a clone of this Container. Some properties that are specific to this instance's current context are
+reverted to their defaults (for example .parent).</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[recursive=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>If true, all of the descendants of this container will be cloned recursively. If false, the
+properties of the container will be cloned, but the new instance will not have any children.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Container</span>:
+                    <p>A clone of the current Container instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_clone" class="method item">
+    <h3 class="name"><code>clone</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[recursive=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Container</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7682"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7682</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a clone of this Container. Some properties that are specific to this instance's current context are
+reverted to their defaults (for example .parent).</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[recursive=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>If true, all of the descendants of this container will be cloned recursively. If false, the
+properties of the container will be cloned, but the new instance will not have any children.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Container</span>:
+                    <p>A clone of the current Container instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_cloneChildren" class="method item protected">
+    <h3 class="name"><code>cloneChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>o</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7722"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7722</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Recursively clones all children of this container, and adds them to the target container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">o</code>
+                        <span class="type">Container</span>
+
+
+                    <div class="param-description">
+                        <p>The target container.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_cloneChildren" class="method item protected">
+    <h3 class="name"><code>cloneChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>o</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag protected">protected</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7722"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7722</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Recursively clones all children of this container, and adds them to the target container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">o</code>
+                        <span class="type">Container</span>
+
+
+                    <div class="param-description">
+                        <p>The target container.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_contains" class="method item">
+    <h3 class="name"><code>contains</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7590"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7590</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns true if the specified display object either is this container or is a descendent (child, grandchild, etc)
+of this container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The DisplayObject to be checked.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the specified display object either is this container or is a descendent.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_contains" class="method item">
+    <h3 class="name"><code>contains</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7590"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7590</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns true if the specified display object either is this container or is a descendent (child, grandchild, etc)
+of this container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The DisplayObject to be checked.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the specified display object either is this container or is a descendent.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[ignoreCache=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7302"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7302</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws the display object into the specified context ignoring its visible, alpha, shadow, and transform.
+Returns true if the draw was handled (useful for overriding functionality).</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">CanvasRenderingContext2D</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas 2D context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[ignoreCache=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates whether the draw operation should ignore any current cache.
+For example, used for drawing the cache (to prevent it from simply drawing an existing cache back
+into itself).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_draw" class="method item">
+    <h3 class="name"><code>draw</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>ctx</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[ignoreCache=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7302"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7302</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Draws the display object into the specified context ignoring its visible, alpha, shadow, and transform.
+Returns true if the draw was handled (useful for overriding functionality).</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">ctx</code>
+                        <span class="type">CanvasRenderingContext2D</span>
+
+
+                    <div class="param-description">
+                        <p>The canvas 2D context object to draw into.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[ignoreCache=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Indicates whether the draw operation should ignore any current cache.
+For example, used for drawing the cache (to prevent it from simply drawing an existing cache back
+into itself).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getChildAt" class="method item">
+    <h3 class="name"><code>getChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7474"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7474</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the child at the specified index.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.getChildAt(2);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index of the child to return.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child at the specified index. Returns null if there is no child at the index.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getChildAt" class="method item">
+    <h3 class="name"><code>getChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7474"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7474</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the child at the specified index.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.getChildAt(2);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index of the child to return.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child at the specified index. Returns null if there is no child at the index.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getChildByName" class="method item">
+    <h3 class="name"><code>getChildByName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7489"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7489</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the child with the specified name.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The name of the child to return.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child with the specified name.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getChildByName" class="method item">
+    <h3 class="name"><code>getChildByName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7489"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7489</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the child with the specified name.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The name of the child to return.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The child with the specified name.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getChildIndex" class="method item">
+    <h3 class="name"><code>getChildIndex</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Number</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7523"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7523</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the index of the specified child in the display list, or -1 if it is not in the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> var index = container.getChildIndex(child);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The child to return the index of.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Number</span>:
+                    <p>The index of the specified child. -1 if the child is not found.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getChildIndex" class="method item">
+    <h3 class="name"><code>getChildIndex</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Number</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7523"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7523</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the index of the specified child in the display list, or -1 if it is not in the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> var index = container.getChildIndex(child);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The child to return the index of.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Number</span>:
+                    <p>The index of the specified child. -1 if the child is not found.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getNumChildren" class="method item deprecated">
+    <h3 class="name"><code>getNumChildren</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Number</span>
+        </span>
+
+        <span class="flag deprecated">deprecated</span>
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7257"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7257</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Use the Container/numChildren:property property instead.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Number</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getNumChildren" class="method item deprecated">
+    <h3 class="name"><code>getNumChildren</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Number</span>
+        </span>
+
+        <span class="flag deprecated">deprecated</span>
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7257"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7257</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Use the Container/numChildren:property property instead.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Number</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getObjectsUnderPoint" class="method item">
+    <h3 class="name"><code>getObjectsUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[mode=0]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Array</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7620"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7620</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns an array of all display objects under the specified coordinates that are in this container's display
+list. This routine ignores any display objects with DisplayObject/mouseEnabled:property
+set to <code>false</code>. The array will be sorted in order of visual depth, with the top-most display object at index 0.
+This uses shape based hit detection, and can be an expensive operation to run, so it is best to use it carefully.
+For example, if testing for objects under the mouse, test on tick (instead of on DisplayObject/mousemove:event),
+and only if the mouse's position has changed.</p>
+<ul>
+    <li>By default (mode=0) this method evaluates all display objects.</li>
+    <li>By setting the <code>mode</code> parameter to <code>1</code>, the DisplayObject/mouseEnabled:property
+        and MouseChildren:property properties will be respected.</li>
+       <li>Setting the <code>mode</code> to <code>2</code> additionally excludes display objects that do not have active mouse event
+        listeners or a DisplayObject:cursor:property property. That is, only objects
+        that would normally intercept mouse interaction will be included. This can significantly improve performance
+        in some cases by reducing the number of display objects that need to be tested.</li>
+</li>
+<p>This method accounts for both DisplayObject/hitArea:property and DisplayObject/mask:property.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[mode=0]</code>
+                        <span class="type">Number</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The mode to use to determine which display objects to include. 0-all, 1-respect mouseEnabled/mouseChildren, 2-only mouse opaque objects.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Array</span>:
+                    <p>An Array of DisplayObjects under the specified coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getObjectsUnderPoint" class="method item">
+    <h3 class="name"><code>getObjectsUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[mode=0]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Array</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7620"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7620</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns an array of all display objects under the specified coordinates that are in this container's display
+list. This routine ignores any display objects with DisplayObject/mouseEnabled:property
+set to <code>false</code>. The array will be sorted in order of visual depth, with the top-most display object at index 0.
+This uses shape based hit detection, and can be an expensive operation to run, so it is best to use it carefully.
+For example, if testing for objects under the mouse, test on tick (instead of on DisplayObject/mousemove:event),
+and only if the mouse's position has changed.</p>
+<ul>
+    <li>By default (mode=0) this method evaluates all display objects.</li>
+    <li>By setting the <code>mode</code> parameter to <code>1</code>, the DisplayObject/mouseEnabled:property
+        and MouseChildren:property properties will be respected.</li>
+       <li>Setting the <code>mode</code> to <code>2</code> additionally excludes display objects that do not have active mouse event
+        listeners or a DisplayObject:cursor:property property. That is, only objects
+        that would normally intercept mouse interaction will be included. This can significantly improve performance
+        in some cases by reducing the number of display objects that need to be tested.</li>
+</li>
+<p>This method accounts for both DisplayObject/hitArea:property and DisplayObject/mask:property.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[mode=0]</code>
+                        <span class="type">Number</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The mode to use to determine which display objects to include. 0-all, 1-respect mouseEnabled/mouseChildren, 2-only mouse opaque objects.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Array</span>:
+                    <p>An Array of DisplayObjects under the specified coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getObjectUnderPoint" class="method item">
+    <h3 class="name"><code>getObjectUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code>mode</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7652"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7652</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Similar to Container/getObjectsUnderPoint, but returns only the top-most display
+object. This runs significantly faster than <code>getObjectsUnderPoint()</code>, but is still potentially an expensive
+operation. See Container/getObjectsUnderPoint for more information.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">mode</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The mode to use to determine which display objects to include.  0-all, 1-respect mouseEnabled/mouseChildren, 2-only mouse opaque objects.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The top-most display object under the specified coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getObjectUnderPoint" class="method item">
+    <h3 class="name"><code>getObjectUnderPoint</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+                <li class="arg">
+                        <code>mode</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">DisplayObject</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7652"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7652</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Similar to Container/getObjectsUnderPoint, but returns only the top-most display
+object. This runs significantly faster than <code>getObjectsUnderPoint()</code>, but is still potentially an expensive
+operation. See Container/getObjectsUnderPoint for more information.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position in the container to test.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">mode</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The mode to use to determine which display objects to include.  0-all, 1-respect mouseEnabled/mouseChildren, 2-only mouse opaque objects.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">DisplayObject</span>:
+                    <p>The top-most display object under the specified coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_hitTest" class="method item">
+    <h3 class="name"><code>hitTest</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7605"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7605</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Tests whether the display object intersects the specified local point (ie. draws a pixel with alpha &gt; 0 at the
+specified position). This ignores the alpha, shadow and compositeOperation of the display object, and all
+transform properties including regX/Y.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position to check in the display object's local coordinates.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position to check in the display object's local coordinates.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>A Boolean indicating whether there is a visible section of a DisplayObject that overlaps the specified
+coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_hitTest" class="method item">
+    <h3 class="name"><code>hitTest</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>x</code>
+                </li>
+                <li class="arg">
+                        <code>y</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7605"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7605</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Tests whether the display object intersects the specified local point (ie. draws a pixel with alpha &gt; 0 at the
+specified position). This ignores the alpha, shadow and compositeOperation of the display object, and all
+transform properties including regX/Y.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">x</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The x position to check in the display object's local coordinates.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">y</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The y position to check in the display object's local coordinates.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>A Boolean indicating whether there is a visible section of a DisplayObject that overlaps the specified
+coordinates.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_initialize" class="method item deprecated">
+    <h3 class="name"><code>initialize</code></h3>
+
+        <span class="paren">()</span>
+
+
+        <span class="flag deprecated" title="in favour of &#x60;createjs.promote()&#x60;">deprecated</span>
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7281"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7281</code></a>
+        </p>
+
+
+            <p>Deprecated: in favour of &#x60;createjs.promote()&#x60;</p>
+
+    </div>
+
+    <div class="description">
+        <p>Constructor alias for backwards compatibility. This method will be removed in future versions.
+Subclasses should be updated to use Utility Methods/extends.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_initialize" class="method item deprecated">
+    <h3 class="name"><code>initialize</code></h3>
+
+        <span class="paren">()</span>
+
+
+        <span class="flag deprecated" title="in favour of &#x60;createjs.promote()&#x60;">deprecated</span>
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7281"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7281</code></a>
+        </p>
+
+
+            <p>Deprecated: in favour of &#x60;createjs.promote()&#x60;</p>
+
+    </div>
+
+    <div class="description">
+        <p>Constructor alias for backwards compatibility. This method will be removed in future versions.
+Subclasses should be updated to use Utility Methods/extends.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_isVisible" class="method item">
+    <h3 class="name"><code>isVisible</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7289"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7289</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns true or false indicating whether the display object would be visible if drawn to a canvas.
+This does not account for whether it would be visible within the boundaries of the stage.</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>Boolean indicating whether the display object would be visible if drawn to a canvas</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isVisible" class="method item">
+    <h3 class="name"><code>isVisible</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7289"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7289</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns true or false indicating whether the display object would be visible if drawn to a canvas.
+This does not account for whether it would be visible within the boundaries of the stage.</p>
+<p>NOTE: This method is mainly for internal use, though it may be useful for advanced uses.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>Boolean indicating whether the display object would be visible if drawn to a canvas</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_removeAllChildren" class="method item">
+    <h3 class="name"><code>removeAllChildren</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7460"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7460</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes all children from the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code>container.removeAllChildren();</code></pre>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_removeAllChildren" class="method item">
+    <h3 class="name"><code>removeAllChildren</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7460"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7460</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes all children from the display list.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code>container.removeAllChildren();</code></pre>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_removeChild" class="method item">
+    <h3 class="name"><code>removeChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7399"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7399</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes the specified child from the display list. Note that it is faster to use removeChildAt() if the index is
+already known.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.removeChild(child);
+</code></pre>
+<p>You can also remove multiple children:</p>
+<pre class="code prettyprint"><code> removeChild(child1, child2, ...);
+</code></pre>
+<p>Returns true if the child (or children) was removed, or false if it was not in the display list.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The child to remove.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the child (or children) was removed, or false if it was not in the display list.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_removeChild" class="method item">
+    <h3 class="name"><code>removeChild</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7399"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7399</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes the specified child from the display list. Note that it is faster to use removeChildAt() if the index is
+already known.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.removeChild(child);
+</code></pre>
+<p>You can also remove multiple children:</p>
+<pre class="code prettyprint"><code> removeChild(child1, child2, ...);
+</code></pre>
+<p>Returns true if the child (or children) was removed, or false if it was not in the display list.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                        <p>The child to remove.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the child (or children) was removed, or false if it was not in the display list.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_removeChildAt" class="method item">
+    <h3 class="name"><code>removeChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7426"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7426</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes the child at the specified index from the display list, and sets its parent to null.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.removeChildAt(2);
+</code></pre>
+<p>You can also remove multiple children:</p>
+<pre class="code prettyprint"><code> container.removeChild(2, 7, ...)
+</code></pre>
+<p>Returns true if the child (or children) was removed, or false if any index was out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index of the child to remove.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the child (or children) was removed, or false if any index was out of range.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_removeChildAt" class="method item">
+    <h3 class="name"><code>removeChildAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7426"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7426</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes the child at the specified index from the display list, and sets its parent to null.</p>
+<p><h4>Example</h4></p>
+<pre class="code prettyprint"><code> container.removeChildAt(2);
+</code></pre>
+<p>You can also remove multiple children:</p>
+<pre class="code prettyprint"><code> container.removeChild(2, 7, ...)
+</code></pre>
+<p>Returns true if the child (or children) was removed, or false if any index was out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                        <p>The index of the child to remove.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>true if the child (or children) was removed, or false if any index was out of range.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_setChildIndex" class="method item">
+    <h3 class="name"><code>setChildIndex</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7573"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7573</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Changes the depth of the specified child. Fails silently if the child is not a child of this container, or the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setChildIndex" class="method item">
+    <h3 class="name"><code>setChildIndex</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child</code>
+                </li>
+                <li class="arg">
+                        <code>index</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7573"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7573</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Changes the depth of the specified child. Fails silently if the child is not a child of this container, or the index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_sortChildren" class="method item">
+    <h3 class="name"><code>sortChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>sortFunction</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7503"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7503</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Performs an array sort operation on the child list.</p>
+<p><h4>Example: Display children with a higher y in front.</h4></p>
+<pre class="code prettyprint"><code> var sortFunction = function(obj1, obj2, options) {
+     if (obj1.y &gt; obj2.y) { return 1; }
+     if (obj1.y &lt; obj2.y) { return -1; }
+     return 0;
+ }
+ container.sortChildren(sortFunction);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">sortFunction</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>the function to use to sort the child list. See JavaScript's <code>Array.sort</code>
+documentation for details.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_sortChildren" class="method item">
+    <h3 class="name"><code>sortChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>sortFunction</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7503"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7503</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Performs an array sort operation on the child list.</p>
+<p><h4>Example: Display children with a higher y in front.</h4></p>
+<pre class="code prettyprint"><code> var sortFunction = function(obj1, obj2, options) {
+     if (obj1.y &gt; obj2.y) { return 1; }
+     if (obj1.y &lt; obj2.y) { return -1; }
+     return 0;
+ }
+ container.sortChildren(sortFunction);</code></pre>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">sortFunction</code>
+                        <span class="type">Function</span>
+
+
+                    <div class="param-description">
+                        <p>the function to use to sort the child list. See JavaScript's <code>Array.sort</code>
+documentation for details.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_swapChildren" class="method item">
+    <h3 class="name"><code>swapChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child1</code>
+                </li>
+                <li class="arg">
+                        <code>child2</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7553"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7553</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Swaps the specified children's depth in the display list. Fails silently if either child is not a child of this
+Container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child1</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">child2</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_swapChildren" class="method item">
+    <h3 class="name"><code>swapChildren</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>child1</code>
+                </li>
+                <li class="arg">
+                        <code>child2</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7553"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7553</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Swaps the specified children's depth in the display list. Fails silently if either child is not a child of this
+Container.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">child1</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">child2</code>
+                        <span class="type">DisplayObject</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_swapChildrenAt" class="method item">
+    <h3 class="name"><code>swapChildrenAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index1</code>
+                </li>
+                <li class="arg">
+                        <code>index2</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7538"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7538</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Swaps the children at the specified indexes. Fails silently if either index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index1</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index2</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_swapChildrenAt" class="method item">
+    <h3 class="name"><code>swapChildrenAt</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>index1</code>
+                </li>
+                <li class="arg">
+                        <code>index2</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7538"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7538</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Swaps the children at the specified indexes. Fails silently if either index is out of range.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">index1</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">index2</code>
+                        <span class="type">Number</span>
+
+
+                    <div class="param-description">
+                         
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_toString" class="method item">
+    <h3 class="name"><code>toString</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7696"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7696</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a string representation of this object.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>a string representation of the instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_toString" class="method item">
+    <h3 class="name"><code>toString</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7696"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7696</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns a string representation of this object.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+                    <p>a string representation of the instance.</p>
+
+            </div>
+        </div>
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property_children" class="property item">
+    <h3 class="name"><code>children</code></h3>
+    <span class="type">Array</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7222"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7222</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The array of children in the display list. You should usually use the child management methods such as
+Container/addChild, Container/removeChild,
+Container/swapChildren, etc, rather than accessing this directly, but it is
+included for advanced uses.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property_children" class="property item">
+    <h3 class="name"><code>children</code></h3>
+    <span class="type">Array</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7222"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7222</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The array of children in the display list. You should usually use the child management methods such as
+Container/addChild, Container/removeChild,
+Container/swapChildren, etc, rather than accessing this directly, but it is
+included for advanced uses.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> null</p>
+
+
+</div>
+<div id="property_mouseChildren" class="property item">
+    <h3 class="name"><code>mouseChildren</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7233"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7233</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether the children of this container are independently enabled for mouse/pointer interaction.
+If false, the children will be aggregated under the container - for example, a click on a child shape would
+trigger a click event on the container.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> true</p>
+
+
+</div>
+<div id="property_mouseChildren" class="property item">
+    <h3 class="name"><code>mouseChildren</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7233"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7233</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Indicates whether the children of this container are independently enabled for mouse/pointer interaction.
+If false, the children will be aggregated under the container - for example, a click on a child shape would
+trigger a click event on the container.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> true</p>
+
+
+</div>
+<div id="property_numChildren" class="property item">
+    <h3 class="name"><code>numChildren</code></h3>
+    <span class="type">Number</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7267"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7267</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the number of children in the container.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_numChildren" class="property item">
+    <h3 class="name"><code>numChildren</code></h3>
+    <span class="type">Number</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7267"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7267</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns the number of children in the container.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_tickChildren" class="property item">
+    <h3 class="name"><code>tickChildren</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-0.8.2.combined.js.html#l7243"><code>Scripts\lib\EaselJS\lib\easeljs-0.8.2.combined.js:7243</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>If false, the tick will not be propagated to children of this Container. This can provide some performance benefits.
+In addition to preventing the &quot;tick&quot; event from being dispatched, it will also prevent tick related updates
+on some display objects (ex. Sprite &amp; MovieClip frame advancing, DOMElement visibility handling).</p>
+
+    </div>
+
+        <p><strong>Default:</strong> true</p>
+
+
+</div>
+<div id="property_tickChildren" class="property item">
+    <h3 class="name"><code>tickChildren</code></h3>
+    <span class="type">Boolean</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_EaselJS_lib_easeljs-NEXT.combined.js.html#l7243"><code>Scripts\lib\EaselJS\lib\easeljs-NEXT.combined.js:7243</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>If false, the tick will not be propagated to children of this Container. This can provide some performance benefits.
+In addition to preventing the &quot;tick&quot; event from being dispatched, it will also prevent tick related updates
+on some display objects (ex. Sprite &amp; MovieClip frame advancing, DOMElement visibility handling).</p>
+
+    </div>
+
+        <p><strong>Default:</strong> true</p>
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

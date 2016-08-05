@@ -1,0 +1,4346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Graphics.XHRRequest</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/ButtonHelper.html">ButtonHelper</a></li>
+                                <li><a href="../classes/DisplayProps.html">DisplayProps</a></li>
+                                <li><a href="../classes/Event.html">Event</a></li>
+                                <li><a href="../classes/EventDispatcher.html">EventDispatcher</a></li>
+                                <li><a href="../classes/Graphics.html">Graphics</a></li>
+                                <li><a href="../classes/Graphics.AbstractLoader.html">Graphics.AbstractLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractMediaLoader.html">Graphics.AbstractMediaLoader</a></li>
+                                <li><a href="../classes/Graphics.AbstractPlugin.html">Graphics.AbstractPlugin</a></li>
+                                <li><a href="../classes/Graphics.AbstractRequest.html">Graphics.AbstractRequest</a></li>
+                                <li><a href="../classes/Graphics.AbstractSoundInstance.html">Graphics.AbstractSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.AlphaMapFilter.html">Graphics.AlphaMapFilter</a></li>
+                                <li><a href="../classes/Graphics.AlphaMaskFilter.html">Graphics.AlphaMaskFilter</a></li>
+                                <li><a href="../classes/Graphics.Arc.html">Graphics.Arc</a></li>
+                                <li><a href="../classes/Graphics.ArcTo.html">Graphics.ArcTo</a></li>
+                                <li><a href="../classes/Graphics.AudioSprite.html">Graphics.AudioSprite</a></li>
+                                <li><a href="../classes/Graphics.BeginPath.html">Graphics.BeginPath</a></li>
+                                <li><a href="../classes/Graphics.BezierCurveTo.html">Graphics.BezierCurveTo</a></li>
+                                <li><a href="../classes/Graphics.BinaryLoader.html">Graphics.BinaryLoader</a></li>
+                                <li><a href="../classes/Graphics.Bitmap.html">Graphics.Bitmap</a></li>
+                                <li><a href="../classes/Graphics.BitmapText.html">Graphics.BitmapText</a></li>
+                                <li><a href="../classes/Graphics.BlurFilter.html">Graphics.BlurFilter</a></li>
+                                <li><a href="../classes/Graphics.Circle.html">Graphics.Circle</a></li>
+                                <li><a href="../classes/Graphics.ClosePath.html">Graphics.ClosePath</a></li>
+                                <li><a href="../classes/Graphics.ColorFilter.html">Graphics.ColorFilter</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrix.html">Graphics.ColorMatrix</a></li>
+                                <li><a href="../classes/Graphics.ColorMatrixFilter.html">Graphics.ColorMatrixFilter</a></li>
+                                <li><a href="../classes/Graphics.Container.html">Graphics.Container</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioLoader.html">Graphics.CordovaAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioPlugin.html">Graphics.CordovaAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.CordovaAudioSoundInstance.html">Graphics.CordovaAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.CSSLoader.html">Graphics.CSSLoader</a></li>
+                                <li><a href="../classes/Graphics.DataUtils.html">Graphics.DataUtils</a></li>
+                                <li><a href="../classes/Graphics.DisplayObject.html">Graphics.DisplayObject</a></li>
+                                <li><a href="../classes/Graphics.DOMElement.html">Graphics.DOMElement</a></li>
+                                <li><a href="../classes/Graphics.DomUtils.html">Graphics.DomUtils</a></li>
+                                <li><a href="../classes/Graphics.Ease.html">Graphics.Ease</a></li>
+                                <li><a href="../classes/Graphics.EaselJS.html">Graphics.EaselJS</a></li>
+                                <li><a href="../classes/Graphics.Ellipse.html">Graphics.Ellipse</a></li>
+                                <li><a href="../classes/Graphics.ErrorEvent.html">Graphics.ErrorEvent</a></li>
+                                <li><a href="../classes/Graphics.Fill.html">Graphics.Fill</a></li>
+                                <li><a href="../classes/Graphics.Filter.html">Graphics.Filter</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioLoader.html">Graphics.FlashAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioPlugin.html">Graphics.FlashAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.FlashAudioSoundInstance.html">Graphics.FlashAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioPlugin.html">Graphics.HTMLAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioSoundInstance.html">Graphics.HTMLAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.HTMLAudioTagPool.html">Graphics.HTMLAudioTagPool</a></li>
+                                <li><a href="../classes/Graphics.ImageLoader.html">Graphics.ImageLoader</a></li>
+                                <li><a href="../classes/Graphics.JavaScriptLoader.html">Graphics.JavaScriptLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONLoader.html">Graphics.JSONLoader</a></li>
+                                <li><a href="../classes/Graphics.JSONPLoader.html">Graphics.JSONPLoader</a></li>
+                                <li><a href="../classes/Graphics.LineTo.html">Graphics.LineTo</a></li>
+                                <li><a href="../classes/Graphics.LoadItem.html">Graphics.LoadItem</a></li>
+                                <li><a href="../classes/Graphics.LoadQueue.html">Graphics.LoadQueue</a></li>
+                                <li><a href="../classes/Graphics.ManifestLoader.html">Graphics.ManifestLoader</a></li>
+                                <li><a href="../classes/Graphics.MediaTagRequest.html">Graphics.MediaTagRequest</a></li>
+                                <li><a href="../classes/Graphics.MotionGuidePlugin.html">Graphics.MotionGuidePlugin</a></li>
+                                <li><a href="../classes/Graphics.MoveTo.html">Graphics.MoveTo</a></li>
+                                <li><a href="../classes/Graphics.MovieClip.html">Graphics.MovieClip</a></li>
+                                <li><a href="../classes/Graphics.MovieClipPlugin.html">Graphics.MovieClipPlugin</a></li>
+                                <li><a href="../classes/Graphics.PlayPropsConfig.html">Graphics.PlayPropsConfig</a></li>
+                                <li><a href="../classes/Graphics.PolyStar.html">Graphics.PolyStar</a></li>
+                                <li><a href="../classes/Graphics.PreloadJS.html">Graphics.PreloadJS</a></li>
+                                <li><a href="../classes/Graphics.ProgressEvent.html">Graphics.ProgressEvent</a></li>
+                                <li><a href="../classes/Graphics.QuadraticCurveTo.html">Graphics.QuadraticCurveTo</a></li>
+                                <li><a href="../classes/Graphics.Rect.html">Graphics.Rect</a></li>
+                                <li><a href="../classes/Graphics.RequestUtils.html">Graphics.RequestUtils</a></li>
+                                <li><a href="../classes/Graphics.RoundRect.html">Graphics.RoundRect</a></li>
+                                <li><a href="../classes/Graphics.Shape.html">Graphics.Shape</a></li>
+                                <li><a href="../classes/Graphics.Sound.html">Graphics.Sound</a></li>
+                                <li><a href="../classes/Graphics.SoundJS.html">Graphics.SoundJS</a></li>
+                                <li><a href="../classes/Graphics.SoundLoader.html">Graphics.SoundLoader</a></li>
+                                <li><a href="../classes/Graphics.Sprite.html">Graphics.Sprite</a></li>
+                                <li><a href="../classes/Graphics.SpriteContainer.html">Graphics.SpriteContainer</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetBuilder.html">Graphics.SpriteSheetBuilder</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetLoader.html">Graphics.SpriteSheetLoader</a></li>
+                                <li><a href="../classes/Graphics.SpriteSheetUtils.html">Graphics.SpriteSheetUtils</a></li>
+                                <li><a href="../classes/Graphics.SpriteStage.html">Graphics.SpriteStage</a></li>
+                                <li><a href="../classes/Graphics.Stage.html">Graphics.Stage</a></li>
+                                <li><a href="../classes/Graphics.Stroke.html">Graphics.Stroke</a></li>
+                                <li><a href="../classes/Graphics.StrokeDash.html">Graphics.StrokeDash</a></li>
+                                <li><a href="../classes/Graphics.StrokeStyle.html">Graphics.StrokeStyle</a></li>
+                                <li><a href="../classes/Graphics.SVGLoader.html">Graphics.SVGLoader</a></li>
+                                <li><a href="../classes/Graphics.TagRequest.html">Graphics.TagRequest</a></li>
+                                <li><a href="../classes/Graphics.Text.html">Graphics.Text</a></li>
+                                <li><a href="../classes/Graphics.TextLoader.html">Graphics.TextLoader</a></li>
+                                <li><a href="../classes/Graphics.Timeline.html">Graphics.Timeline</a></li>
+                                <li><a href="../classes/Graphics.Touch.html">Graphics.Touch</a></li>
+                                <li><a href="../classes/Graphics.Tween.html">Graphics.Tween</a></li>
+                                <li><a href="../classes/Graphics.TweenJS.html">Graphics.TweenJS</a></li>
+                                <li><a href="../classes/Graphics.VideoLoader.html">Graphics.VideoLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioLoader.html">Graphics.WebAudioLoader</a></li>
+                                <li><a href="../classes/Graphics.WebAudioPlugin.html">Graphics.WebAudioPlugin</a></li>
+                                <li><a href="../classes/Graphics.WebAudioSoundInstance.html">Graphics.WebAudioSoundInstance</a></li>
+                                <li><a href="../classes/Graphics.XHRRequest.html">Graphics.XHRRequest</a></li>
+                                <li><a href="../classes/Graphics.XMLLoader.html">Graphics.XMLLoader</a></li>
+                                <li><a href="../classes/Matrix2D.html">Matrix2D</a></li>
+                                <li><a href="../classes/MouseEvent.html">MouseEvent</a></li>
+                                <li><a href="../classes/Point.html">Point</a></li>
+                                <li><a href="../classes/Rectangle.html">Rectangle</a></li>
+                                <li><a href="../classes/Shadow.html">Shadow</a></li>
+                                <li><a href="../classes/SpriteSheet.html">SpriteSheet</a></li>
+                                <li><a href="../classes/Ticker.html">Ticker</a></li>
+                                <li><a href="../classes/UID.html">UID</a></li>
+                                <li><a href="../classes/Utility Methods.html">Utility Methods</a></li>
+                            </ul>
+                
+                
+                            <ul id="api-modules" class="apis modules">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>Graphics.XHRRequest Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends AbstractLoader
+        </div>
+
+        <div class="foundat">
+            Defined in: <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2693"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2693</code></a>
+        </div>
+
+
+</div>
+
+
+<div class="box intro">
+    <p>A preloader that loads items using XHR requests, usually XMLHttpRequest. However XDomainRequests will be used
+for cross-domain requests if possible, and older versions of IE fall back on to ActiveX objects when necessary.
+XHR requests load the content as text or binary data, provide progress and consistent completion events, and
+can be canceled during load. Note that XHR is not supported in IE 6 or earlier, and is not recommended for
+cross-domain loading.</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_Graphics.XHRRequest" class="method item">
+    <h3 class="name"><code>Graphics.XHRRequest</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>item</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2693"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2693</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">item</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The object that defines the file to load. Please see the LoadQueue/loadFile
+for an overview of supported file properties.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method private">
+                                <a href="#method__checkError">_checkError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__checkError">_checkError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__checkError">_checkError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__checkError">_checkError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__clean">_clean</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__clean">_clean</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__clean">_clean</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__clean">_clean</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__createXHR">_createXHR</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__createXHR">_createXHR</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__createXHR">_createXHR</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__createXHR">_createXHR</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__getResponse">_getResponse</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__getResponse">_getResponse</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__getResponse">_getResponse</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__getResponse">_getResponse</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleError">_handleError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleError">_handleError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleError">_handleError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleError">_handleError</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoad">_handleLoad</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoad">_handleLoad</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoad">_handleLoad</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoad">_handleLoad</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoadStart">_handleLoadStart</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoadStart">_handleLoadStart</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoadStart">_handleLoadStart</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleLoadStart">_handleLoadStart</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleProgress">_handleProgress</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleProgress">_handleProgress</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleProgress">_handleProgress</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleProgress">_handleProgress</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleReadyStateChange">_handleReadyStateChange</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleReadyStateChange">_handleReadyStateChange</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleReadyStateChange">_handleReadyStateChange</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleReadyStateChange">_handleReadyStateChange</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleTimeout">_handleTimeout</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleTimeout">_handleTimeout</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleTimeout">_handleTimeout</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method__handleTimeout">_handleTimeout</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getAllResponseHeaders">getAllResponseHeaders</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getAllResponseHeaders">getAllResponseHeaders</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getAllResponseHeaders">getAllResponseHeaders</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getAllResponseHeaders">getAllResponseHeaders</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResponseHeader">getResponseHeader</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResponseHeader">getResponseHeader</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResponseHeader">getResponseHeader</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResponseHeader">getResponseHeader</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResult">getResult</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResult">getResult</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResult">getResult</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getResult">getResult</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_handleAbort">handleAbort</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_handleAbort">handleAbort</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_handleAbort">handleAbort</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_handleAbort">handleAbort</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property private">
+                                <a href="#property__loadTimeout">_loadTimeout</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__loadTimeout">_loadTimeout</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__loadTimeout">_loadTimeout</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__loadTimeout">_loadTimeout</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__rawResponse">_rawResponse</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__rawResponse">_rawResponse</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__rawResponse">_rawResponse</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__rawResponse">_rawResponse</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__request">_request</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__request">_request</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__request">_request</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__request">_request</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__response">_response</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__response">_response</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__response">_response</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__response">_response</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__xhrLevel">_xhrLevel</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__xhrLevel">_xhrLevel</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__xhrLevel">_xhrLevel</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property__xhrLevel">_xhrLevel</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property_ACTIVEX_VERSIONS">ACTIVEX_VERSIONS</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property_ACTIVEX_VERSIONS">ACTIVEX_VERSIONS</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property_ACTIVEX_VERSIONS">ACTIVEX_VERSIONS</a>
+
+                            </li>
+                            <li class="index-item property private">
+                                <a href="#property_ACTIVEX_VERSIONS">ACTIVEX_VERSIONS</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method__checkError" class="method item private">
+    <h3 class="name"><code>_checkError</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Int</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l3034"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:3034</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Determine if there is an error in the current load. This checks the status of the request for problem codes. Note
+that this does not check for an actual response. Currently, it only checks for 404 or 0 error code.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Int</span>:
+                    <p>If the request status returns an error code.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__checkError" class="method item private">
+    <h3 class="name"><code>_checkError</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Int</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l3034"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:3034</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Determine if there is an error in the current load. This checks the status of the request for problem codes. Note
+that this does not check for an actual response. Currently, it only checks for 404 or 0 error code.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Int</span>:
+                    <p>If the request status returns an error code.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__checkError" class="method item private">
+    <h3 class="name"><code>_checkError</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Int</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3989"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3989</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Determine if there is an error in the current load. This checks the status of the request for problem codes. Note
+that this does not check for an actual response. Currently, it only checks for 404 or 0 error code.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Int</span>:
+                    <p>If the request status returns an error code.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__checkError" class="method item private">
+    <h3 class="name"><code>_checkError</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">Int</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3989"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3989</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Determine if there is an error in the current load. This checks the status of the request for problem codes. Note
+that this does not check for an actual response. Currently, it only checks for 404 or 0 error code.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Int</span>:
+                    <p>If the request status returns an error code.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__clean" class="method item private">
+    <h3 class="name"><code>_clean</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l3182"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:3182</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>A request has completed (or failed or canceled), and needs to be disposed.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__clean" class="method item private">
+    <h3 class="name"><code>_clean</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l3182"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:3182</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>A request has completed (or failed or canceled), and needs to be disposed.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__clean" class="method item private">
+    <h3 class="name"><code>_clean</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l4137"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:4137</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>A request has completed (or failed or canceled), and needs to be disposed.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__clean" class="method item private">
+    <h3 class="name"><code>_clean</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l4137"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:4137</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>A request has completed (or failed or canceled), and needs to be disposed.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__createXHR" class="method item private">
+    <h3 class="name"><code>_createXHR</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>item</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l4042"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:4042</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Create an XHR request. Depending on a number of factors, we get totally different results.</p>
+<ol><li>Some browsers get an <code>XDomainRequest</code> when loading cross-domain.</li>
+     <li>XMLHttpRequest are created when available.</li>
+     <li>ActiveX.XMLHTTP objects are used in older IE browsers.</li>
+     <li>Text requests override the mime type if possible</li>
+     <li>Origin headers are sent for crossdomain requests in some browsers.</li>
+     <li>Binary loads set the response type to "arraybuffer"</li></ol>
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">item</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The requested item that is being loaded.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>If an XHR request or equivalent was successfully created.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__createXHR" class="method item private">
+    <h3 class="name"><code>_createXHR</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>item</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l3087"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:3087</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Create an XHR request. Depending on a number of factors, we get totally different results.</p>
+<ol><li>Some browsers get an <code>XDomainRequest</code> when loading cross-domain.</li>
+     <li>XMLHttpRequest are created when available.</li>
+     <li>ActiveX.XMLHTTP objects are used in older IE browsers.</li>
+     <li>Text requests override the mime type if possible</li>
+     <li>Origin headers are sent for crossdomain requests in some browsers.</li>
+     <li>Binary loads set the response type to "arraybuffer"</li></ol>
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">item</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The requested item that is being loaded.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>If an XHR request or equivalent was successfully created.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__createXHR" class="method item private">
+    <h3 class="name"><code>_createXHR</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>item</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l3087"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:3087</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Create an XHR request. Depending on a number of factors, we get totally different results.</p>
+<ol><li>Some browsers get an <code>XDomainRequest</code> when loading cross-domain.</li>
+     <li>XMLHttpRequest are created when available.</li>
+     <li>ActiveX.XMLHTTP objects are used in older IE browsers.</li>
+     <li>Text requests override the mime type if possible</li>
+     <li>Origin headers are sent for crossdomain requests in some browsers.</li>
+     <li>Binary loads set the response type to "arraybuffer"</li></ol>
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">item</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The requested item that is being loaded.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>If an XHR request or equivalent was successfully created.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__createXHR" class="method item private">
+    <h3 class="name"><code>_createXHR</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>item</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Boolean</span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l4042"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:4042</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Create an XHR request. Depending on a number of factors, we get totally different results.</p>
+<ol><li>Some browsers get an <code>XDomainRequest</code> when loading cross-domain.</li>
+     <li>XMLHttpRequest are created when available.</li>
+     <li>ActiveX.XMLHTTP objects are used in older IE browsers.</li>
+     <li>Text requests override the mime type if possible</li>
+     <li>Origin headers are sent for crossdomain requests in some browsers.</li>
+     <li>Binary loads set the response type to "arraybuffer"</li></ol>
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">item</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The requested item that is being loaded.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Boolean</span>:
+                    <p>If an XHR request or equivalent was successfully created.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method__getResponse" class="method item private">
+    <h3 class="name"><code>_getResponse</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l4008"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:4008</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Validate the response. Different browsers have different approaches, some of which throw errors when accessed
+in other browsers. If there is no response, the <code>_response</code> property will remain null.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__getResponse" class="method item private">
+    <h3 class="name"><code>_getResponse</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l3053"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:3053</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Validate the response. Different browsers have different approaches, some of which throw errors when accessed
+in other browsers. If there is no response, the <code>_response</code> property will remain null.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__getResponse" class="method item private">
+    <h3 class="name"><code>_getResponse</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l3053"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:3053</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Validate the response. Different browsers have different approaches, some of which throw errors when accessed
+in other browsers. If there is no response, the <code>_response</code> property will remain null.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__getResponse" class="method item private">
+    <h3 class="name"><code>_getResponse</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l4008"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:4008</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Validate the response. Different browsers have different approaches, some of which throw errors when accessed
+in other browsers. If there is no response, the <code>_response</code> property will remain null.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method__handleError" class="method item private">
+    <h3 class="name"><code>_handleError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2956"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2956</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an error event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR error event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleError" class="method item private">
+    <h3 class="name"><code>_handleError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3911"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3911</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an error event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR error event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleError" class="method item private">
+    <h3 class="name"><code>_handleError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3911"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3911</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an error event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR error event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleError" class="method item private">
+    <h3 class="name"><code>_handleError</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2956"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2956</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an error event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR error event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoad" class="method item private">
+    <h3 class="name"><code>_handleLoad</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3935"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3935</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has completed. This is called by the XHR request directly, or by a readyStateChange that has
+<code>request.readyState == 4</code>. Only the first call to this method will be processed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR load event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoad" class="method item private">
+    <h3 class="name"><code>_handleLoad</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2980"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2980</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has completed. This is called by the XHR request directly, or by a readyStateChange that has
+<code>request.readyState == 4</code>. Only the first call to this method will be processed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR load event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoad" class="method item private">
+    <h3 class="name"><code>_handleLoad</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3935"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3935</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has completed. This is called by the XHR request directly, or by a readyStateChange that has
+<code>request.readyState == 4</code>. Only the first call to this method will be processed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR load event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoad" class="method item private">
+    <h3 class="name"><code>_handleLoad</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2980"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2980</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has completed. This is called by the XHR request directly, or by a readyStateChange that has
+<code>request.readyState == 4</code>. Only the first call to this method will be processed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR load event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoadStart" class="method item private">
+    <h3 class="name"><code>_handleLoadStart</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3889"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3889</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a load start.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR loadStart event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoadStart" class="method item private">
+    <h3 class="name"><code>_handleLoadStart</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2934"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2934</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a load start.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR loadStart event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoadStart" class="method item private">
+    <h3 class="name"><code>_handleLoadStart</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2934"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2934</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a load start.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR loadStart event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleLoadStart" class="method item private">
+    <h3 class="name"><code>_handleLoadStart</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3889"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3889</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a load start.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR loadStart event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleProgress" class="method item private">
+    <h3 class="name"><code>_handleProgress</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3874"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3874</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported progress.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR progress event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleProgress" class="method item private">
+    <h3 class="name"><code>_handleProgress</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2919"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2919</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported progress.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR progress event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleProgress" class="method item private">
+    <h3 class="name"><code>_handleProgress</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3874"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3874</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported progress.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR progress event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleProgress" class="method item private">
+    <h3 class="name"><code>_handleProgress</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2919"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2919</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported progress.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR progress event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleReadyStateChange" class="method item private">
+    <h3 class="name"><code>_handleReadyStateChange</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2967"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2967</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a readyState change. Note that older browsers (IE 7 &amp; 8) do not provide an onload
+event, so we must monitor the readyStateChange to determine if the file is loaded.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR readyStateChange event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleReadyStateChange" class="method item private">
+    <h3 class="name"><code>_handleReadyStateChange</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3922"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3922</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a readyState change. Note that older browsers (IE 7 &amp; 8) do not provide an onload
+event, so we must monitor the readyStateChange to determine if the file is loaded.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR readyStateChange event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleReadyStateChange" class="method item private">
+    <h3 class="name"><code>_handleReadyStateChange</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3922"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3922</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a readyState change. Note that older browsers (IE 7 &amp; 8) do not provide an onload
+event, so we must monitor the readyStateChange to determine if the file is loaded.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR readyStateChange event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleReadyStateChange" class="method item private">
+    <h3 class="name"><code>_handleReadyStateChange</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2967"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2967</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported a readyState change. Note that older browsers (IE 7 &amp; 8) do not provide an onload
+event, so we must monitor the readyStateChange to determine if the file is loaded.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR readyStateChange event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleTimeout" class="method item private">
+    <h3 class="name"><code>_handleTimeout</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[event]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3975"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3975</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has timed out. This is called by the XHR request directly, or via a <code>setTimeout</code>
+callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[event]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR timeout event. This is occasionally null when called by the backup setTimeout.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleTimeout" class="method item private">
+    <h3 class="name"><code>_handleTimeout</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[event]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l3020"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:3020</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has timed out. This is called by the XHR request directly, or via a <code>setTimeout</code>
+callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[event]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR timeout event. This is occasionally null when called by the backup setTimeout.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleTimeout" class="method item private">
+    <h3 class="name"><code>_handleTimeout</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[event]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3975"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3975</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has timed out. This is called by the XHR request directly, or via a <code>setTimeout</code>
+callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[event]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR timeout event. This is occasionally null when called by the backup setTimeout.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method__handleTimeout" class="method item private">
+    <h3 class="name"><code>_handleTimeout</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[event]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l3020"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:3020</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has timed out. This is called by the XHR request directly, or via a <code>setTimeout</code>
+callback.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[event]</code>
+                        <span class="type">Object</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR timeout event. This is occasionally null when called by the backup setTimeout.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getAllResponseHeaders" class="method item">
+    <h3 class="name"><code>getAllResponseHeaders</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3836"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3836</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get all the response headers from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Return all the HTTP headers, excluding headers that are a case-insensitive match
+for Set-Cookie or Set-Cookie2, as a single string, with each header line separated by a U+000D CR U+000A LF pair,
+excluding the status line, and with each header name and header value separated by a U+003A COLON U+0020 SPACE
+pair.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getAllResponseHeaders" class="method item">
+    <h3 class="name"><code>getAllResponseHeaders</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2881"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2881</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get all the response headers from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Return all the HTTP headers, excluding headers that are a case-insensitive match
+for Set-Cookie or Set-Cookie2, as a single string, with each header line separated by a U+000D CR U+000A LF pair,
+excluding the status line, and with each header name and header value separated by a U+003A COLON U+0020 SPACE
+pair.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getAllResponseHeaders" class="method item">
+    <h3 class="name"><code>getAllResponseHeaders</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3836"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3836</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get all the response headers from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Return all the HTTP headers, excluding headers that are a case-insensitive match
+for Set-Cookie or Set-Cookie2, as a single string, with each header line separated by a U+000D CR U+000A LF pair,
+excluding the status line, and with each header name and header value separated by a U+003A COLON U+0020 SPACE
+pair.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getAllResponseHeaders" class="method item">
+    <h3 class="name"><code>getAllResponseHeaders</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2881"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2881</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get all the response headers from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Return all the HTTP headers, excluding headers that are a case-insensitive match
+for Set-Cookie or Set-Cookie2, as a single string, with each header line separated by a U+000D CR U+000A LF pair,
+excluding the status line, and with each header name and header value separated by a U+003A COLON U+0020 SPACE
+pair.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResponseHeader" class="method item">
+    <h3 class="name"><code>getResponseHeader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>header</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2900"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2900</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get a specific response header from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Returns the header field value from the response of which the field name matches
+header, unless the field name is Set-Cookie or Set-Cookie2.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">header</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The header name to retrieve.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResponseHeader" class="method item">
+    <h3 class="name"><code>getResponseHeader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>header</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3855"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3855</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get a specific response header from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Returns the header field value from the response of which the field name matches
+header, unless the field name is Set-Cookie or Set-Cookie2.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">header</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The header name to retrieve.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResponseHeader" class="method item">
+    <h3 class="name"><code>getResponseHeader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>header</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2900"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2900</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get a specific response header from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Returns the header field value from the response of which the field name matches
+header, unless the field name is Set-Cookie or Set-Cookie2.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">header</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The header name to retrieve.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResponseHeader" class="method item">
+    <h3 class="name"><code>getResponseHeader</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>header</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">String</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3855"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3855</code></a>
+        </p>
+
+
+
+            <p>Available since 0.4.1</p>
+    </div>
+
+    <div class="description">
+        <p>Get a specific response header from the XmlHttpRequest.</p>
+<p><strong>From the docs:</strong> Returns the header field value from the response of which the field name matches
+header, unless the field name is Set-Cookie or Set-Cookie2.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">header</code>
+                        <span class="type">String</span>
+
+
+                    <div class="param-description">
+                        <p>The header name to retrieve.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">String</span>:
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResult" class="method item">
+    <h3 class="name"><code>getResult</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[raw=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2791"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2791</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Look up the loaded result.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[raw=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Return a raw result instead of a formatted result. This applies to content
+loaded via XHR such as scripts, XML, CSS, and Images. If there is no raw result, the formatted result will be
+returned instead.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>A result object containing the content that was loaded, such as:</p>
+<ul>
+     <li>An image tag (&lt;image /&gt;) for images</li>
+     <li>A script tag for JavaScript (&lt;script /&gt;). Note that scripts loaded with tags may be added to the
+     HTML head.</li>
+     <li>A style tag for CSS (&lt;style /&gt;)</li>
+     <li>Raw text for TEXT</li>
+     <li>A formatted JavaScript object defined by JSON</li>
+     <li>An XML document</li>
+     <li>An binary arraybuffer loaded by XHR</li>
+</ul>
+Note that if a raw result is requested, but not found, the result will be returned instead.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResult" class="method item">
+    <h3 class="name"><code>getResult</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[raw=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3746"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3746</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Look up the loaded result.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[raw=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Return a raw result instead of a formatted result. This applies to content
+loaded via XHR such as scripts, XML, CSS, and Images. If there is no raw result, the formatted result will be
+returned instead.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>A result object containing the content that was loaded, such as:</p>
+<ul>
+     <li>An image tag (&lt;image /&gt;) for images</li>
+     <li>A script tag for JavaScript (&lt;script /&gt;). Note that scripts loaded with tags may be added to the
+     HTML head.</li>
+     <li>A style tag for CSS (&lt;style /&gt;)</li>
+     <li>Raw text for TEXT</li>
+     <li>A formatted JavaScript object defined by JSON</li>
+     <li>An XML document</li>
+     <li>An binary arraybuffer loaded by XHR</li>
+</ul>
+Note that if a raw result is requested, but not found, the result will be returned instead.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResult" class="method item">
+    <h3 class="name"><code>getResult</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[raw=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3746"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3746</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Look up the loaded result.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[raw=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Return a raw result instead of a formatted result. This applies to content
+loaded via XHR such as scripts, XML, CSS, and Images. If there is no raw result, the formatted result will be
+returned instead.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>A result object containing the content that was loaded, such as:</p>
+<ul>
+     <li>An image tag (&lt;image /&gt;) for images</li>
+     <li>A script tag for JavaScript (&lt;script /&gt;). Note that scripts loaded with tags may be added to the
+     HTML head.</li>
+     <li>A style tag for CSS (&lt;style /&gt;)</li>
+     <li>Raw text for TEXT</li>
+     <li>A formatted JavaScript object defined by JSON</li>
+     <li>An XML document</li>
+     <li>An binary arraybuffer loaded by XHR</li>
+</ul>
+Note that if a raw result is requested, but not found, the result will be returned instead.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getResult" class="method item">
+    <h3 class="name"><code>getResult</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[raw=false]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type">Object</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2791"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2791</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Look up the loaded result.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[raw=false]</code>
+                        <span class="type">Boolean</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Return a raw result instead of a formatted result. This applies to content
+loaded via XHR such as scripts, XML, CSS, and Images. If there is no raw result, the formatted result will be
+returned instead.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">Object</span>:
+                    <p>A result object containing the content that was loaded, such as:</p>
+<ul>
+     <li>An image tag (&lt;image /&gt;) for images</li>
+     <li>A script tag for JavaScript (&lt;script /&gt;). Note that scripts loaded with tags may be added to the
+     HTML head.</li>
+     <li>A style tag for CSS (&lt;style /&gt;)</li>
+     <li>Raw text for TEXT</li>
+     <li>A formatted JavaScript object defined by JSON</li>
+     <li>An XML document</li>
+     <li>An binary arraybuffer loaded by XHR</li>
+</ul>
+Note that if a raw result is requested, but not found, the result will be returned instead.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_handleAbort" class="method item private">
+    <h3 class="name"><code>handleAbort</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2945"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2945</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an abort event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR abort event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_handleAbort" class="method item private">
+    <h3 class="name"><code>handleAbort</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2945"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2945</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an abort event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR abort event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_handleAbort" class="method item private">
+    <h3 class="name"><code>handleAbort</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3900"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3900</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an abort event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR abort event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_handleAbort" class="method item private">
+    <h3 class="name"><code>handleAbort</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3900"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3900</code></a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The XHR request has reported an abort event.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type">Object</span>
+
+
+                    <div class="param-description">
+                        <p>The XHR abort event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property__loadTimeout" class="property item private">
+    <h3 class="name"><code>_loadTimeout</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2717"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2717</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A manual load timeout that is used for browsers that do not support the onTimeout event on XHR (XHR level 1,
+typically IE9).</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__loadTimeout" class="property item private">
+    <h3 class="name"><code>_loadTimeout</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3672"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3672</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A manual load timeout that is used for browsers that do not support the onTimeout event on XHR (XHR level 1,
+typically IE9).</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__loadTimeout" class="property item private">
+    <h3 class="name"><code>_loadTimeout</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2717"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2717</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A manual load timeout that is used for browsers that do not support the onTimeout event on XHR (XHR level 1,
+typically IE9).</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__loadTimeout" class="property item private">
+    <h3 class="name"><code>_loadTimeout</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3672"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3672</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A manual load timeout that is used for browsers that do not support the onTimeout event on XHR (XHR level 1,
+typically IE9).</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__rawResponse" class="property item private">
+    <h3 class="name"><code>_rawResponse</code></h3>
+    <span class="type">String | Object</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2745"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2745</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of the loaded file before it is modified. In most cases, content is converted from raw text to
+an HTML tag or a formatted object which is set to the <code>result</code> property, but the developer may still
+want to access the raw content as it was loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__rawResponse" class="property item private">
+    <h3 class="name"><code>_rawResponse</code></h3>
+    <span class="type">String | Object</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3700"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3700</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of the loaded file before it is modified. In most cases, content is converted from raw text to
+an HTML tag or a formatted object which is set to the <code>result</code> property, but the developer may still
+want to access the raw content as it was loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__rawResponse" class="property item private">
+    <h3 class="name"><code>_rawResponse</code></h3>
+    <span class="type">String | Object</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2745"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2745</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of the loaded file before it is modified. In most cases, content is converted from raw text to
+an HTML tag or a formatted object which is set to the <code>result</code> property, but the developer may still
+want to access the raw content as it was loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__rawResponse" class="property item private">
+    <h3 class="name"><code>_rawResponse</code></h3>
+    <span class="type">String | Object</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3700"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3700</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of the loaded file before it is modified. In most cases, content is converted from raw text to
+an HTML tag or a formatted object which is set to the <code>result</code> property, but the developer may still
+want to access the raw content as it was loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__request" class="property item private">
+    <h3 class="name"><code>_request</code></h3>
+    <span class="type">XMLHttpRequest | XDomainRequest | ActiveX.XMLHTTP</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2709"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2709</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A reference to the XHR request used to load the content.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__request" class="property item private">
+    <h3 class="name"><code>_request</code></h3>
+    <span class="type">XMLHttpRequest | XDomainRequest | ActiveX.XMLHTTP</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3664"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3664</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A reference to the XHR request used to load the content.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__request" class="property item private">
+    <h3 class="name"><code>_request</code></h3>
+    <span class="type">XMLHttpRequest | XDomainRequest | ActiveX.XMLHTTP</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3664"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3664</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A reference to the XHR request used to load the content.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__request" class="property item private">
+    <h3 class="name"><code>_request</code></h3>
+    <span class="type">XMLHttpRequest | XDomainRequest | ActiveX.XMLHTTP</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2709"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2709</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>A reference to the XHR request used to load the content.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__response" class="property item private">
+    <h3 class="name"><code>_response</code></h3>
+    <span class="type">Mixed</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2736"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2736</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of a loaded file. This is set because it is expensive to look up constantly. This property will be
+null until the file is loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__response" class="property item private">
+    <h3 class="name"><code>_response</code></h3>
+    <span class="type">Mixed</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3691"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3691</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of a loaded file. This is set because it is expensive to look up constantly. This property will be
+null until the file is loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__response" class="property item private">
+    <h3 class="name"><code>_response</code></h3>
+    <span class="type">Mixed</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3691"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3691</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of a loaded file. This is set because it is expensive to look up constantly. This property will be
+null until the file is loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__response" class="property item private">
+    <h3 class="name"><code>_response</code></h3>
+    <span class="type">Mixed</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2736"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2736</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The response of a loaded file. This is set because it is expensive to look up constantly. This property will be
+null until the file is loaded.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property__xhrLevel" class="property item private">
+    <h3 class="name"><code>_xhrLevel</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2726"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2726</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The browser's XHR (XMLHTTPRequest) version. Supported versions are 1 and 2. There is no official way to detect
+the version, so we use capabilities to make a best guess.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property__xhrLevel" class="property item private">
+    <h3 class="name"><code>_xhrLevel</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3681"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3681</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The browser's XHR (XMLHTTPRequest) version. Supported versions are 1 and 2. There is no official way to detect
+the version, so we use capabilities to make a best guess.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property__xhrLevel" class="property item private">
+    <h3 class="name"><code>_xhrLevel</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2726"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2726</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The browser's XHR (XMLHTTPRequest) version. Supported versions are 1 and 2. There is no official way to detect
+the version, so we use capabilities to make a best guess.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property__xhrLevel" class="property item private">
+    <h3 class="name"><code>_xhrLevel</code></h3>
+    <span class="type">Number</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3681"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3681</code></a>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The browser's XHR (XMLHTTPRequest) version. Supported versions are 1 and 2. There is no official way to detect
+the version, so we use capabilities to make a best guess.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 1</p>
+
+
+</div>
+<div id="property_ACTIVEX_VERSIONS" class="property item private">
+    <h3 class="name"><code>ACTIVEX_VERSIONS</code></h3>
+    <span class="type">Array</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-0.6.2.combined.js.html#l3729"><code>Scripts\lib\PreloadJS\lib\preloadjs-0.6.2.combined.js:3729</code></a>
+        </p>
+
+
+            <p>Available since 0.4.2</p>
+    </div>
+
+    <div class="description">
+        <p>A list of XMLHTTP object IDs to try when building an ActiveX object for XHR requests in earlier versions of IE.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_ACTIVEX_VERSIONS" class="property item private">
+    <h3 class="name"><code>ACTIVEX_VERSIONS</code></h3>
+    <span class="type">Array</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-0.6.2.combined.js.html#l2774"><code>Scripts\lib\SoundJS\lib\soundjs-0.6.2.combined.js:2774</code></a>
+        </p>
+
+
+            <p>Available since 0.4.2</p>
+    </div>
+
+    <div class="description">
+        <p>A list of XMLHTTP object IDs to try when building an ActiveX object for XHR requests in earlier versions of IE.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_ACTIVEX_VERSIONS" class="property item private">
+    <h3 class="name"><code>ACTIVEX_VERSIONS</code></h3>
+    <span class="type">Array</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_PreloadJS_lib_preloadjs-NEXT.combined.js.html#l3729"><code>Scripts\lib\PreloadJS\lib\preloadjs-NEXT.combined.js:3729</code></a>
+        </p>
+
+
+            <p>Available since 0.4.2</p>
+    </div>
+
+    <div class="description">
+        <p>A list of XMLHTTP object IDs to try when building an ActiveX object for XHR requests in earlier versions of IE.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_ACTIVEX_VERSIONS" class="property item private">
+    <h3 class="name"><code>ACTIVEX_VERSIONS</code></h3>
+    <span class="type">Array</span>
+
+
+        <span class="flag private">private</span>
+
+
+
+    <div class="meta">
+                <p>
+                Defined in
+        <a href="../files/Scripts_lib_SoundJS_lib_soundjs-NEXT.combined.js.html#l2774"><code>Scripts\lib\SoundJS\lib\soundjs-NEXT.combined.js:2774</code></a>
+        </p>
+
+
+            <p>Available since 0.4.2</p>
+    </div>
+
+    <div class="description">
+        <p>A list of XMLHTTP object IDs to try when building an ActiveX object for XHR requests in earlier versions of IE.</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
