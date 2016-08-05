@@ -7,19 +7,25 @@ let canvas:HTMLElement = document.getElementById("canvas");
 let stage:createjs.Stage;
 
 let helloLabel:createjs.Text;
+let startButton:objects.Button;// reference to our button class
 
 function init():void{
     //console.log("Game start now   haha!");
     stage = new createjs.Stage(canvas); //instantiate the stage container
+    stage.enableMouseOver(20);
     createjs.Ticker.framerate = 60;
     createjs.Ticker.on("tick",gameLoop);// create the event listener for the tick event
     main();// call the main game function 
 }
 
 function gameLoop():void {
-    helloLabel.rotation += 5;
 
+   
     stage.update(); //refresh the stage;
+}
+
+function startButtonClick(event:createjs.MouseEvent){
+    helloLabel.text = "clicked!";
 }
 
 function main():void{
@@ -30,8 +36,12 @@ function main():void{
     helloLabel.x = 320;
     helloLabel.y = 240;
     stage.addChild(helloLabel);
+    startButton = new objects.Button("../../Assets/images/startButton.png",320,340,true);
+    stage.addChild(startButton);
 
-    helloLabel.text = "goodbye";
+    startButton.on("click",startButtonClick);
+
+    
 
 }
 
