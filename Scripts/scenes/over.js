@@ -5,37 +5,37 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var scenes;
 (function (scenes) {
-    var Menu = (function (_super) {
-        __extends(Menu, _super);
+    var Over = (function (_super) {
+        __extends(Over, _super);
         /**
          *
          */
-        function Menu() {
+        function Over() {
             _super.call(this);
         }
-        Menu.prototype.Start = function () {
+        Over.prototype.Start = function () {
             //add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE", "60px", "Consolas", "#000000", 320, 240);
-            this.addChild(this._menuLabel);
+            this._gameOverLabel = new objects.Label("GAME OVER", "60px", "Consolas", "#000000", 320, 240);
+            this.addChild(this._gameOverLabel);
             //add start button 
-            this._startButton = new objects.Button("startButton", 320, 420, true);
-            this.addChild(this._startButton);
+            this._restartButton = new objects.Button("restartButton", 320, 420, true);
+            this.addChild(this._restartButton);
             //start button event listener
-            this._startButton.on("click", this._startButtonClick, this);
+            this._restartButton.on("click", this.__restartButtonClick, this);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
-        Menu.prototype.Update = function () {
+        Over.prototype.Update = function () {
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
-        Menu.prototype._startButtonClick = function (event) {
+        Over.prototype.__restartButtonClick = function (event) {
             //Switch the scene
             core.scene = config.Scene.PLAY;
             core.changeScene();
         };
-        return Menu;
+        return Over;
     }(objects.Scene));
-    scenes.Menu = Menu;
+    scenes.Over = Over;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=menu.js.map
+//# sourceMappingURL=over.js.map

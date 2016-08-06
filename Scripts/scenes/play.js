@@ -5,37 +5,37 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var scenes;
 (function (scenes) {
-    var Menu = (function (_super) {
-        __extends(Menu, _super);
+    var Play = (function (_super) {
+        __extends(Play, _super);
         /**
          *
          */
-        function Menu() {
+        function Play() {
             _super.call(this);
         }
-        Menu.prototype.Start = function () {
-            //add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE", "60px", "Consolas", "#000000", 320, 240);
-            this.addChild(this._menuLabel);
+        Play.prototype.Start = function () {
+            //add play Label
+            this._playLabel = new objects.Label("PLAY SCENE", "60px", "Consolas", "#000000", 320, 240);
+            this.addChild(this._playLabel);
             //add start button 
-            this._startButton = new objects.Button("startButton", 320, 420, true);
-            this.addChild(this._startButton);
+            this._nextButton = new objects.Button("nextButton", 320, 420, true);
+            this.addChild(this._nextButton);
             //start button event listener
-            this._startButton.on("click", this._startButtonClick, this);
+            this._nextButton.on("click", this._startButtonClick, this);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
-        Menu.prototype.Update = function () {
+        Play.prototype.Update = function () {
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
-        Menu.prototype._startButtonClick = function (event) {
+        Play.prototype._startButtonClick = function (event) {
             //Switch the scene
-            core.scene = config.Scene.PLAY;
+            core.scene = config.Scene.OVER;
             core.changeScene();
         };
-        return Menu;
+        return Play;
     }(objects.Scene));
-    scenes.Menu = Menu;
+    scenes.Play = Play;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=menu.js.map
+//# sourceMappingURL=play.js.map

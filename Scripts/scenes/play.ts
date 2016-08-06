@@ -1,8 +1,8 @@
 module scenes {
-    export class Menu extends objects.Scene {
+    export class Play extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES
-        private _menuLabel: objects.Label;
-        private _startButton: objects.Button;
+        private _playLabel: objects.Label;
+        private _nextButton: objects.Button;
 
         /**
          * 
@@ -12,19 +12,19 @@ module scenes {
             
         }
         public Start():void {
-            //add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE","60px","Consolas","#000000",
+            //add play Label
+            this._playLabel = new objects.Label("PLAY SCENE","60px","Consolas","#000000",
             320,240);
-             this.addChild(this._menuLabel);
+             this.addChild(this._playLabel);
 
              //add start button 
-             this._startButton = new objects.Button(
-                 "startButton",320,420,true
+             this._nextButton = new objects.Button(
+                 "nextButton",320,420,true
              )
-             this.addChild(this._startButton);
+             this.addChild(this._nextButton);
 
              //start button event listener
-             this._startButton.on("click",this._startButtonClick,this);
+             this._nextButton.on("click",this._startButtonClick,this);
 
              // add this scene to the global scene container
              core.stage.addChild(this);
@@ -40,8 +40,8 @@ module scenes {
 
         private _startButtonClick(event:createjs.MouseEvent):void{
             //Switch the scene
-             core.scene = config.Scene.PLAY;
-             core.changeScene();
+            core.scene = config.Scene.OVER;
+            core.changeScene();
 
 
         }

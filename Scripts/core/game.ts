@@ -24,11 +24,16 @@ namespace core {
     let currentScene: objects.Scene;
     export let scene: number;
 
-    let menu :scenes.Menu;
+    let menu: scenes.Menu;
+    let over: scenes.Over;
+    let play: scenes.Play;
 
     //asset manifest for images and sounds
     let assetData = [
-        { id: "startButton", src: "../../Assets/images/startButton.png" }
+        { id: "startButton", src: "../../Assets/images/startButton.png" },
+        { id: "restartButton", src: "../../Assets/images/restartButton.png" },
+        { id: "nextButton", src: "../../Assets/images/nextButton.png" },
+        { id: "exitButton", src: "../../Assets/images/exitButton.png" }
     ];
     /**
      * this method preloads assets for the game.
@@ -72,20 +77,20 @@ namespace core {
             //show the MENU Scene
             case config.Scene.MENU:
                 stage.removeAllChildren();
-                 menu = new scenes.Menu();
-                 currentScene = menu;
+                menu = new scenes.Menu();
+                currentScene = menu;
                 break;
             //show the PLAY Scene
             case config.Scene.PLAY:
                 stage.removeAllChildren();
-                //play = new scenes.Play();
-                //currentScene = play;
+                play = new scenes.Play();
+                currentScene = play;
                 break;
             //show the OVER Scene
             case config.Scene.OVER:
                 stage.removeAllChildren();
-                //over = new scenes.Over();
-                //currentScene = over;
+                over = new scenes.Over();
+                currentScene = over;
                 break;
 
 
