@@ -22,7 +22,9 @@ namespace core {
 
     // declare scene variables
     let currentScene: objects.Scene;
-    let scene: number;
+    export let scene: number;
+
+    let menu :scenes.Menu;
 
     //asset manifest for images and sounds
     let assetData = [
@@ -63,15 +65,15 @@ namespace core {
         helloLabel.text = "clicked!";
     }
 
-    function changeScene(): void {
+    export function changeScene(): void {
 
         //launch Various Scenes
         switch (scene) {
             //show the MENU Scene
             case config.Scene.MENU:
                 stage.removeAllChildren();
-                // menu = new scenes.Menu();
-                //currentScene = menu;
+                 menu = new scenes.Menu();
+                 currentScene = menu;
                 break;
             //show the PLAY Scene
             case config.Scene.PLAY:

@@ -7,7 +7,7 @@ var core;
     var startButton; // reference to our button class
     // declare scene variables
     var currentScene;
-    var scene;
+    var menu;
     //asset manifest for images and sounds
     var assetData = [
         { id: "startButton", src: "../../Assets/images/startButton.png" }
@@ -30,7 +30,7 @@ var core;
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop); // create the event listener for the tick event
         //setup the default scene
-        scene = config.Scene.MENU;
+        core.scene = config.Scene.MENU;
         changeScene();
     }
     function gameLoop() {
@@ -43,12 +43,12 @@ var core;
     }
     function changeScene() {
         //launch Various Scenes
-        switch (scene) {
+        switch (core.scene) {
             //show the MENU Scene
             case config.Scene.MENU:
                 core.stage.removeAllChildren();
-                // menu = new scenes.Menu();
-                //currentScene = menu;
+                menu = new scenes.Menu();
+                currentScene = menu;
                 break;
             //show the PLAY Scene
             case config.Scene.PLAY:
@@ -64,6 +64,7 @@ var core;
                 break;
         }
     }
+    core.changeScene = changeScene;
     window.addEventListener("load", preload);
 })(core || (core = {}));
 //# sourceMappingURL=game.js.map
