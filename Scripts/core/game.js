@@ -5,6 +5,9 @@ var core;
     var canvas = document.getElementById("canvas");
     var helloLabel;
     var startButton; // reference to our button class
+    // declare scene variables
+    var currentScene;
+    var scene;
     //asset manifest for images and sounds
     var assetData = [
         { id: "startButton", src: "../../Assets/images/startButton.png" }
@@ -26,25 +29,40 @@ var core;
         core.stage.enableMouseOver(20);
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop); // create the event listener for the tick event
-        main(); // call the main game function 
+        //setup the default scene
+        scene = config.Scene.MENU;
+        changeScene();
     }
     function gameLoop() {
+        //call the scene's update
+        currentScene.Update();
         core.stage.update(); //refresh the stage;
     }
     function startButtonClick(event) {
         helloLabel.text = "clicked!";
     }
-    /**
-     * this is the main game function
-     * @methdos: main
-     * @returns {void}
-     */
-    function main() {
-        helloLabel = new objects.Label("Hello World!", "40px", "Consolas", "#000000", 320, 240);
-        core.stage.addChild(helloLabel);
-        startButton = new objects.Button("startButton", 320, 340, true);
-        core.stage.addChild(startButton);
-        startButton.on("click", startButtonClick);
+    function changeScene() {
+        //launch Various Scenes
+        switch (scene) {
+            //show the MENU Scene
+            case config.Scene.MENU:
+                core.stage.removeAllChildren();
+                // menu = new scenes.Menu();
+                //currentScene = menu;
+                break;
+            //show the PLAY Scene
+            case config.Scene.PLAY:
+                core.stage.removeAllChildren();
+                //play = new scenes.Play();
+                //currentScene = play;
+                break;
+            //show the OVER Scene
+            case config.Scene.OVER:
+                core.stage.removeAllChildren();
+                //over = new scenes.Over();
+                //currentScene = over;
+                break;
+        }
     }
     window.addEventListener("load", preload);
 })(core || (core = {}));
