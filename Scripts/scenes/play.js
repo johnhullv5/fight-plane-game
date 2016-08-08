@@ -15,17 +15,13 @@ var scenes;
         }
         Play.prototype.Start = function () {
             //add play Label
-            this._playLabel = new objects.Label("PLAY SCENE", "60px", "Consolas", "#000000", 320, 240);
-            this.addChild(this._playLabel);
-            //add start button 
-            this._nextButton = new objects.Button("nextButton", 320, 420, true);
-            this.addChild(this._nextButton);
-            //start button event listener
-            this._nextButton.on("click", this._startButtonClick, this);
+            this._sky = new objects.Sky("sky");
+            this.addChild(this._sky);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
         Play.prototype.Update = function () {
+            this._sky.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
