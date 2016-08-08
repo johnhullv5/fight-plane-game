@@ -2,6 +2,7 @@ module scenes {
     export class Play extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES
         private _sky:objects.Sky;
+        private _ballon:objects.Ballon;
         /**
          * 
          */
@@ -14,6 +15,9 @@ module scenes {
             this._sky = new objects.Sky("sky");
             this.addChild(this._sky);
 
+            this._ballon = new objects.Ballon("ballon");
+            this.addChild(this._ballon);
+
              // add this scene to the global scene container
              core.stage.addChild(this);
 
@@ -21,6 +25,7 @@ module scenes {
 
         public Update():void{
             this._sky.update();
+            this._ballon.update();
             //scene updates happen here...
         }
 

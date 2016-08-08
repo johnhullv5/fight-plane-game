@@ -17,11 +17,14 @@ var scenes;
             //add play Label
             this._sky = new objects.Sky("sky");
             this.addChild(this._sky);
+            this._ballon = new objects.Ballon("ballon");
+            this.addChild(this._ballon);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
         Play.prototype.Update = function () {
             this._sky.update();
+            this._ballon.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++

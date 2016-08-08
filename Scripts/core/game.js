@@ -16,7 +16,8 @@ var core;
         { id: "restartButton", src: "../../Assets/images/restartButton.png" },
         { id: "nextButton", src: "../../Assets/images/nextButton.png" },
         { id: "exitButton", src: "../../Assets/images/exitButton.png" },
-        { id: "sky", src: "../../Assets/images/240106381793617835.jpg" }
+        { id: "sky", src: "../../Assets/images/240106381793617835.jpg" },
+        { id: "ballon", src: "../../Assets/images/ballon1.gif" }
     ];
     /**
      * this method preloads assets for the game.
