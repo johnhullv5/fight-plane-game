@@ -21,8 +21,12 @@ var scenes;
             this.addChild(this._ballon);
             this._player = new objects.Player("player");
             this.addChild(this._player);
-            this._enemy = new objects.Enemy("enemy");
-            this.addChild(this._enemy);
+            this._enemies = new Array();
+            for (var count = 0; count < 3; count++) {
+                this._enemies.push(new objects.Enemy("enemy"));
+                this.addChild(this._enemies[count]);
+            }
+            //this.addChild(this._enemies);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
@@ -30,7 +34,9 @@ var scenes;
             this._sky.update();
             this._ballon.update();
             this._player.update();
-            this._enemy.update();
+            this._enemies.forEach(function (enemy) {
+                enemy.update();
+            });
             //scene updates happen here...
         };
         //event handler ++++++++++++++++

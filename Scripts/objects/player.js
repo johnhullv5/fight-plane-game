@@ -41,11 +41,11 @@ var objects;
         Player.prototype._checkBounds = function () {
             //checkbounds to stop player from going outsides
             //check the upper bounds
-            if (this.y <= (0 + (this.height * 0.5))) {
+            if (this.y <= (-25 + (this.height * 0.5))) {
                 this.y = this.height * 0.5 - 25;
             }
             //check the lower bounds
-            if (this.y > 480 - (this.height * 0.5)) {
+            if (this.y > 510 - (this.height * 0.5)) {
                 this.y = 510 - (this.height * 0.5);
             }
         };

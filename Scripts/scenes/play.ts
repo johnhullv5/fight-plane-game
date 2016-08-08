@@ -4,7 +4,7 @@ module scenes {
         private _sky:objects.Sky;
         private _ballon:objects.Ballon;
         private _player:objects.Player;
-        private _enemy:objects.Enemy;
+        private _enemies:objects.Enemy[];
         /**
          * 
          */
@@ -23,8 +23,13 @@ module scenes {
             this._player = new objects.Player("player");
             this.addChild(this._player);
 
-            this._enemy = new objects.Enemy("enemy");
-            this.addChild(this._enemy);
+            this._enemies = new Array<objects.Enemy>();
+            for(let count = 0;count<3;count++)
+            {
+                this._enemies.push(new objects.Enemy("enemy"));
+                this.addChild(this._enemies[count]);
+            }
+            //this.addChild(this._enemies);
 
              // add this scene to the global scene container
              core.stage.addChild(this);
@@ -35,7 +40,10 @@ module scenes {
             this._sky.update();
             this._ballon.update();
             this._player.update();
-            this._enemy.update();
+            this._enemies.forEach(enemy =>{
+                enemy.update();
+            });
+           
             //scene updates happen here...
         }
 
