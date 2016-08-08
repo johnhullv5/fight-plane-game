@@ -35,7 +35,10 @@ namespace core {
         { id: "nextButton", src: "../../Assets/images/nextButton.png" },
         { id: "exitButton", src: "../../Assets/images/exitButton.png" },
         { id: "sky", src: "../../Assets/images/240106381793617835.jpg" },
-        { id: "ballon", src: "../../Assets/images/ballon1.gif" }
+        { id: "ballon", src: "../../Assets/images/ballon1.gif" },
+        { id: "player", src: "../../Assets/images/avantar.gif" },
+         { id: "enemy", src: "../../Assets/images/cloud1.gif" }
+
     ];
     /**
      * this method preloads assets for the game.

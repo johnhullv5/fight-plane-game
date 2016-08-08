@@ -19,12 +19,18 @@ var scenes;
             this.addChild(this._sky);
             this._ballon = new objects.Ballon("ballon");
             this.addChild(this._ballon);
+            this._player = new objects.Player("player");
+            this.addChild(this._player);
+            this._enemy = new objects.Enemy("enemy");
+            this.addChild(this._enemy);
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
         Play.prototype.Update = function () {
             this._sky.update();
             this._ballon.update();
+            this._player.update();
+            this._enemy.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
