@@ -12,32 +12,12 @@ var objects;
      */
     var Player = (function (_super) {
         __extends(Player, _super);
+        //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
         //CONSTRUCTOR++++++++++++++++++++++++++++++++++++++++++++++++++
         function Player(imageString) {
-            _super.call(this, core.assets.getResult(imageString));
+            _super.call(this, imageString);
             this.start();
         }
-        Object.defineProperty(Player.prototype, "width", {
-            //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
-            get: function () {
-                return this._width;
-            },
-            set: function (newwidth) {
-                this._width = newwidth;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Player.prototype, "height", {
-            get: function () {
-                return this._height;
-            },
-            set: function (newheight) {
-                this._height = newheight;
-            },
-            enumerable: true,
-            configurable: true
-        });
         Player.prototype._checkBounds = function () {
             //checkbounds to stop player from going outsides
             //check the upper bounds
@@ -50,20 +30,19 @@ var objects;
             }
         };
         Player.prototype.start = function () {
-            this.width = this.getBounds().width;
-            this.height = this.getBounds().height;
-            this.regX = this.width * 0.5;
-            this.regY = this.height * 0.5;
             // set the x value to be fixed
             this.x = 50;
         };
         Player.prototype.update = function () {
             //player to follow the mouse
+            this.position = new objects.Vector2(this.x, this.y);
+            //console.log("player update.");
             this.y = core.stage.mouseY;
+            //console.log( this.height);
             this._checkBounds();
         };
         return Player;
-    }(createjs.Bitmap));
+    }(objects.GameObject));
     objects.Player = Player;
 })(objects || (objects = {}));
 //# sourceMappingURL=player.js.map

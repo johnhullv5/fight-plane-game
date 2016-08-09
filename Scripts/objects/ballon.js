@@ -10,33 +10,13 @@ var objects;
      */
     var Ballon = (function (_super) {
         __extends(Ballon, _super);
+        //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
         //CONSTRUCTORS +++++++++++++++++++++++++++++++++++
         //create an instance of Sky
         function Ballon(imageString) {
-            _super.call(this, core.assets.getResult(imageString));
+            _super.call(this, imageString);
             this.start();
         }
-        Object.defineProperty(Ballon.prototype, "width", {
-            //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
-            get: function () {
-                return this._width;
-            },
-            set: function (newwidth) {
-                this._width = newwidth;
-            },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(Ballon.prototype, "height", {
-            get: function () {
-                return this._height;
-            },
-            set: function (newheight) {
-                this._height = newheight;
-            },
-            enumerable: true,
-            configurable: true
-        });
         //PRIVATE METHODS +++++++++++++++++++++++++++++++++++
         //reset the game objects and x and y  
         Ballon.prototype._reset = function () {
@@ -56,20 +36,17 @@ var objects;
         //PUBLIC METHODS +++++++++++++++++++++++++++++++++++ 
         //used to initialize the public propertise and private instance variables
         Ballon.prototype.start = function () {
-            this.width = this.getBounds().width;
-            this.height = this.getBounds().height;
-            this.regX = this.width * 0.5;
-            this.regY = this.height * 0.5;
             this._reset();
             this._dx = -5; //5px per frame right.
         };
         // update the object every frame
         Ballon.prototype.update = function () {
+            this.position = new objects.Vector2(this.x, this.y);
             this.x += this._dx;
             this._checkBounds();
         };
         return Ballon;
-    }(createjs.Bitmap));
+    }(objects.GameObject));
     objects.Ballon = Ballon;
 })(objects || (objects = {}));
 //# sourceMappingURL=ballon.js.map
