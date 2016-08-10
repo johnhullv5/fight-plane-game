@@ -20,7 +20,7 @@ var objects;
          */
         function GameObject(imageString) {
             _super.call(this, core.assets.getResult(imageString));
-            this._initialize();
+            this._initialize(imageString);
             this.start();
         }
         Object.defineProperty(GameObject.prototype, "width", {
@@ -44,6 +44,20 @@ var objects;
             enumerable: true,
             configurable: true
         });
+        Object.defineProperty(GameObject.prototype, "halfHeight", {
+            get: function () {
+                return this._height * 0.5;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        Object.defineProperty(GameObject.prototype, "halfWidth", {
+            get: function () {
+                return this._width * 0.5;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Object.defineProperty(GameObject.prototype, "name", {
             get: function () {
                 return this._name;
@@ -54,26 +68,36 @@ var objects;
             enumerable: true,
             configurable: true
         });
-        Object.defineProperty(GameObject.prototype, "postion", {
+        Object.defineProperty(GameObject.prototype, "position", {
             get: function () {
                 return this._position;
             },
-            enumerable: true,
-            configurable: true
-        });
-        Object.defineProperty(GameObject.prototype, "position", {
             set: function (newposition) {
                 this._position = newposition;
             },
             enumerable: true,
             configurable: true
         });
-        GameObject.prototype._initialize = function () {
+        Object.defineProperty(GameObject.prototype, "isColliding", {
+            get: function () {
+                return this._isColliding;
+            },
+            set: function (newState) {
+                this._isColliding = newState;
+            },
+            enumerable: true,
+            configurable: true
+        });
+        GameObject.prototype._initialize = function (imageString) {
+            this.name = imageString;
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
-            this.regX = this.width * 0.5;
-            this.regY = this.height * 0.5;
+            this.regX = this.halfWidth;
+            this.regY = this.halfHeight;
+            console.log("game object:x:" + this.x);
             this.position = new objects.Vector2(this.x, this.y);
+            this._isColliding = false;
+            //console.log("position: x: "+this.position.getX());
         };
         /**
          * This method is used to initialize public properties and

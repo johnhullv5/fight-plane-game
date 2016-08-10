@@ -6,8 +6,11 @@ var __extends = (this && this.__extends) || function (d, b) {
 var objects;
 (function (objects) {
     /**
-     * this class extends the createjs point class
+     * This class extends the CreateJS Point class
      *
+     * @export
+     * @class Vector2
+     * @extends {createjs.Point}
      */
     var Vector2 = (function (_super) {
         __extends(Vector2, _super);
@@ -17,12 +20,16 @@ var objects;
             _super.call(this, x, y);
         }
         /**
+         * This method returns the distance between two Vector2 objects (a and b)
          *
-         * this method returns the distance between vector2 objectes.(a and b)
-         *
+         * @static
+         * @method distance
+         * @param {Vector2} a
+         * @param {Vector2} b
+         * @returns {number}
          */
         Vector2.distance = function (a, b) {
-            return Math.floor(Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2)));
+            return Math.floor(Math.sqrt(Math.pow((b.x - a.x), 2) + Math.pow((b.y - a.y), 2)));
         };
         return Vector2;
     }(createjs.Point));

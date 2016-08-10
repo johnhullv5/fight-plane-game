@@ -18,6 +18,16 @@ var objects;
             _super.call(this, imageString);
             this.start();
         }
+        Object.defineProperty(Player.prototype, "sound", {
+            get: function () {
+                return this._sound;
+            },
+            set: function (newsound) {
+                this._sound = newsound;
+            },
+            enumerable: true,
+            configurable: true
+        });
         Player.prototype._checkBounds = function () {
             //checkbounds to stop player from going outsides
             //check the upper bounds
@@ -30,6 +40,9 @@ var objects;
             }
         };
         Player.prototype.start = function () {
+            this.sound = createjs.Sound.play("engine");
+            this.sound.loop = -1;
+            this.sound.volume = 0.5;
             // set the x value to be fixed
             this.x = 50;
         };

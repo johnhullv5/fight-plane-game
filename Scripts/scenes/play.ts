@@ -5,6 +5,7 @@ module scenes {
         private _ballon:objects.Ballon;
         private _player:objects.Player;
         private _enemies:objects.Enemy[];
+        private _collision:managers.Collision;
         /**
          * 
          */
@@ -31,6 +32,9 @@ module scenes {
             }
             //this.addChild(this._enemies);
 
+            //include a collision manager.
+            this._collision = new managers.Collision();
+
              // add this scene to the global scene container
              core.stage.addChild(this);
 
@@ -40,8 +44,13 @@ module scenes {
             this._sky.update();
             this._ballon.update();
             this._player.update();
+            this._collision.check(this._player,this._ballon);
+
+
+
             this._enemies.forEach(enemy =>{
                 enemy.update();
+                this._collision.check(this._player,enemy);
             });
            
             //scene updates happen here...

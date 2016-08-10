@@ -10,6 +10,7 @@
 /// <reference path="../objects/ballon.ts"/>
 /// <reference path="../objects/player.ts"/>
 /// <reference path="../objects/enemy.ts"/>
+/// <reference path="../managers/collision.ts"/>
 /// <reference path="../scenes/over.ts"/>
 /// <reference path="../scenes/play.ts"/>
 /// <reference path="../scenes/menu.ts"/>

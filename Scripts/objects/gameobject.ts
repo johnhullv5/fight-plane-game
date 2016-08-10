@@ -12,6 +12,8 @@ module objects {
         private _height: number;
         private _name: string;
         private _position: Vector2;
+        private _isColliding:boolean;
+        
 
         //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
         get width(): number {
@@ -26,6 +28,14 @@ module objects {
             return this._height;
         }
 
+        get halfHeight():number{
+            return this._height *0.5;
+        }
+
+        get halfWidth():number{
+            return this._width *0.5;
+        }
+
         set height(newheight: number) {
             this._height = newheight;
         }
@@ -35,12 +45,23 @@ module objects {
         set name(newname: string) {
             this._name = newname;
         }
-        get postion(): Vector2 {
+        get position(): Vector2 {
             return this._position;
         }
         set position(newposition: Vector2) {
             this._position = newposition;
         }
+
+        get isColliding():boolean{
+            return this._isColliding;
+        }
+
+        set isColliding(newState:boolean)
+        {
+            this._isColliding = newState;
+
+        }
+        
 
 
 
@@ -53,15 +74,21 @@ module objects {
 
         constructor(imageString: string) {
             super(core.assets.getResult(imageString));
-            this._initialize();
+
+            this._initialize(imageString);
+
             this.start();
         }
-        private _initialize(): void {
+        private _initialize(imageString:string): void {
+            this.name = imageString;
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
-            this.regX = this.width * 0.5;
-            this.regY = this.height * 0.5;
+            this.regX = this.halfWidth;
+            this.regY = this.halfHeight;
+            console.log("game object:x:"+this.x);
             this.position = new Vector2(this.x, this.y);
+            this._isColliding = false;
+            //console.log("position: x: "+this.position.getX());
 
 
         }
