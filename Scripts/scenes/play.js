@@ -13,6 +13,10 @@ var scenes;
         function Play() {
             _super.call(this);
         }
+        Play.prototype._updateScoreBoard = function () {
+            this._livesLabel.text = "Lives:" + core.lives;
+            this._scoreLable.text = "Score:" + core.score;
+        };
         Play.prototype.Start = function () {
             //add play Label
             this._sky = new objects.Sky("sky");
@@ -21,6 +25,8 @@ var scenes;
             this.addChild(this._ballon);
             this._player = new objects.Player("player");
             this.addChild(this._player);
+            this._engineSound = createjs.Sound.play("engine");
+            this._engineSound.loop = -1;
             this._enemies = new Array();
             for (var count = 0; count < 3; count++) {
                 this._enemies.push(new objects.Enemy("enemy"));
@@ -30,6 +36,12 @@ var scenes;
             //include a collision manager.
             this._collision = new managers.Collision();
             // add this scene to the global scene container
+            // core.stage.addChild(this);
+            //add lives and score lables
+            this._livesLabel = new objects.Label("lives:" + core.lives, "40px", "Consolas", "#FFFF00", 10, 5, false);
+            this.addChild(this._livesLabel);
+            this._scoreLable = new objects.Label("Score:" + core.score, "40px", "Consolas", "#FFFF00", 350, 5, false);
+            this.addChild(this._scoreLable);
             core.stage.addChild(this);
         };
         Play.prototype.Update = function () {
@@ -42,6 +54,12 @@ var scenes;
                 enemy.update();
                 _this._collision.check(_this._player, enemy);
             });
+            this._updateScoreBoard();
+            if (core.lives < 1) {
+                this._engineSound.stop();
+                core.scene = config.Scene.OVER;
+                core.changeScene();
+            }
             //scene updates happen here...
         };
         //event handler ++++++++++++++++

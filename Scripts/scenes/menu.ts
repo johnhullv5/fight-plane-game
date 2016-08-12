@@ -3,6 +3,7 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES
         private _menuLabel: objects.Label;
         private _startButton: objects.Button;
+        private _sky:objects.Sky;
 
         /**
          * 
@@ -12,9 +13,12 @@ module scenes {
             
         }
         public Start():void {
+            this._sky = new objects.Sky("sky");
+            this.addChild(this._sky);
+
             //add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE","60px","Consolas","#000000",
-            320,240);
+            this._menuLabel = new objects.Label("fight plane","60px","Consolas","#FFFF00",
+            320,240,true);
              this.addChild(this._menuLabel);
 
              //add start button 
@@ -32,6 +36,7 @@ module scenes {
         }
 
         public Update():void{
+            this._sky.update();
 
             //scene updates happen here...
         }

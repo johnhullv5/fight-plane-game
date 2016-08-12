@@ -14,10 +14,14 @@ var managers;
                     //of the plane collides with cloud
                     if (other.name === "enemy") {
                         createjs.Sound.play("thunder");
+                        core.lives -= 1;
                     }
                     //of the plane collides with ballon
                     if (other.name === "ballon") {
                         createjs.Sound.play("yay");
+                        core.score += 100;
+                        // test to see if the buloon dispear
+                        other.visible = false;
                     }
                 }
             }

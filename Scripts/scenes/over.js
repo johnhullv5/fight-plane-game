@@ -15,8 +15,12 @@ var scenes;
         }
         Over.prototype.Start = function () {
             //add Menu Label
-            this._gameOverLabel = new objects.Label("GAME OVER", "60px", "Consolas", "#000000", 320, 240);
+            this._sky = new objects.Sky("sky");
+            this.addChild(this._sky);
+            this._gameOverLabel = new objects.Label("GAME OVER", "60px", "Consolas", "#000000", 320, 180, true);
             this.addChild(this._gameOverLabel);
+            this._finalScoreLabel = new objects.Label("Score: " + core.score, "60px", "Consolas", "#FF0000", 320, 240, true);
+            this.addChild(this._finalScoreLabel);
             //add start button 
             this._restartButton = new objects.Button("restartButton", 320, 420, true);
             this.addChild(this._restartButton);
@@ -26,11 +30,14 @@ var scenes;
             core.stage.addChild(this);
         };
         Over.prototype.Update = function () {
+            this._sky.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
         Over.prototype.__restartButtonClick = function (event) {
             //Switch the scene
+            core.lives = 3;
+            core.score = 0;
             core.scene = config.Scene.PLAY;
             core.changeScene();
         };

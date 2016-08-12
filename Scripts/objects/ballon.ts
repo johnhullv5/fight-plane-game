@@ -23,6 +23,8 @@ module objects {
             this.x = 700;
             //y=(-40,400) ok;
             this.y = -40 + Math.floor(Math.random() * 440);
+
+            this.visible = true;
             // get the random y location
             //this.y = Math.floor((Math.random()*(480-(this.height * 0.5)))+(this.height*0.5))
         }

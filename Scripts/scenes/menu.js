@@ -14,8 +14,10 @@ var scenes;
             _super.call(this);
         }
         Menu.prototype.Start = function () {
+            this._sky = new objects.Sky("sky");
+            this.addChild(this._sky);
             //add Menu Label
-            this._menuLabel = new objects.Label("MENU SCENE", "60px", "Consolas", "#000000", 320, 240);
+            this._menuLabel = new objects.Label("fight plane", "60px", "Consolas", "#FFFF00", 320, 240, true);
             this.addChild(this._menuLabel);
             //add start button 
             this._startButton = new objects.Button("startButton", 320, 420, true);
@@ -26,6 +28,7 @@ var scenes;
             core.stage.addChild(this);
         };
         Menu.prototype.Update = function () {
+            this._sky.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++

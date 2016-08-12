@@ -10,11 +10,14 @@ module objects {
             private fontColour: string,
             x: number,
             y: number
+            , isCentered: boolean
         ) {
             super(labelString, (fontSize + " " + fontFamily), fontColour);
+            if (isCentered) {
+                this.regX = this.getMeasuredWidth() * 0.5;
+                this.regY = this.getMeasuredHeight() * 0.5;
+            }
 
-            this.regX = this.getMeasuredWidth() * 0.5;
-            this.regY = this.getMeasuredHeight() * 0.5;
 
             //assin the label coordinates
             this.x = x;

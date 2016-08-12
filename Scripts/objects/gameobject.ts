@@ -12,8 +12,9 @@ module objects {
         private _height: number;
         private _name: string;
         private _position: Vector2;
-        private _isColliding:boolean;
-        
+        private _isColliding: boolean;
+        public sound: createjs.AbstractSoundInstance;
+
 
         //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
         get width(): number {
@@ -28,12 +29,12 @@ module objects {
             return this._height;
         }
 
-        get halfHeight():number{
-            return this._height *0.5;
+        get halfHeight(): number {
+            return this._height * 0.5;
         }
 
-        get halfWidth():number{
-            return this._width *0.5;
+        get halfWidth(): number {
+            return this._width * 0.5;
         }
 
         set height(newheight: number) {
@@ -52,16 +53,17 @@ module objects {
             this._position = newposition;
         }
 
-        get isColliding():boolean{
+        get isColliding(): boolean {
             return this._isColliding;
         }
 
-        set isColliding(newState:boolean)
-        {
+        set isColliding(newState: boolean) {
             this._isColliding = newState;
 
         }
-        
+
+
+
 
 
 
@@ -79,13 +81,13 @@ module objects {
 
             this.start();
         }
-        private _initialize(imageString:string): void {
+        private _initialize(imageString: string): void {
             this.name = imageString;
             this.width = this.getBounds().width;
             this.height = this.getBounds().height;
             this.regX = this.halfWidth;
             this.regY = this.halfHeight;
-            console.log("game object:x:"+this.x);
+            console.log("game object:x:" + this.x);
             this.position = new Vector2(this.x, this.y);
             this._isColliding = false;
             //console.log("position: x: "+this.position.getX());
@@ -105,7 +107,7 @@ module objects {
         }
 
         public update(): void {
-           
+
 
         }
 

@@ -6,16 +6,9 @@ module objects {
      */
     export class Player extends objects.GameObject {
 
-        private _sound:createjs.AbstractSoundInstance;
+       
 
-        get sound():createjs.AbstractSoundInstance{
-            return this._sound;
-        }
 
-        set sound(newsound:createjs.AbstractSoundInstance)
-        {
-            this._sound = newsound;
-        }
         
 
         //PUBLIC PROPERTIES++++++++++++++++++++++++++++++
@@ -44,9 +37,8 @@ module objects {
 
 
         public start(): void {
-            this.sound = createjs.Sound.play("engine");
-            this.sound.loop = -1;
-            this.sound.volume = 0.5;
+            //this.sound = createjs.Sound.play("engine",1,0,0,-1,0.7,0);
+            //this.sound.loop = -1;
             // set the x value to be fixed
             this.x = 50;
 
