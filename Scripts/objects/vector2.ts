@@ -1,3 +1,12 @@
+/**
+ * file name: Vector2.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Vector2 which is the mathematical abtraction of gameobjects.
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * This class extends the CreateJS Point class

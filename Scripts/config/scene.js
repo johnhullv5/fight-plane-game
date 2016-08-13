@@ -1,3 +1,12 @@
+/**
+ * file name: scene.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description: main program define major scenes
+ * Revsion History: 0.1
+ *
+ *
+ */
 var config;
 (function (config) {
     var Scene = (function () {

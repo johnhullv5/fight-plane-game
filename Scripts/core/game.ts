@@ -1,5 +1,15 @@
 /// <reference path="_reference.ts"/>
 
+/**
+ * file name: game.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description: main program define major components
+ * Revsion History: 0.1
+ * 
+ * 
+ */
+
 
 namespace core {
 

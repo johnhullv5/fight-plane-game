@@ -1,3 +1,13 @@
+
+/**
+ * file name: Player.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Player
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this is the player object

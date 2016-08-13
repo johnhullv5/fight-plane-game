@@ -1,3 +1,12 @@
+/**
+ * file name: Menu.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Menu scene
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module scenes {
     export class Menu extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES

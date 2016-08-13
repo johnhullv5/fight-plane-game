@@ -1,3 +1,12 @@
+/**
+ * file name: Over.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Over scene
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module scenes {
     export class Over extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES

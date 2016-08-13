@@ -1,3 +1,14 @@
+
+
+/**
+ * file name: GameObject.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define GameObject super class of other play components
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this class represents a generic Game Object used in the game.

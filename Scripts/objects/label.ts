@@ -1,3 +1,13 @@
+
+/**
+ * file name: Label.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Label
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this is a generic label class.

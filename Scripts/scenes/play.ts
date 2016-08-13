@@ -1,3 +1,12 @@
+/**
+ * file name: Play.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Play scene
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module scenes {
     export class Play extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES

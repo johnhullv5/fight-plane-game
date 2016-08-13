@@ -1,4 +1,17 @@
 /// <reference path="../core/game.ts" />
+
+/**
+ * file name: Scene.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Scene container, generic for different scenes.
+ * Revsion History: 0.1
+ * 
+ * 
+ */
+
+
+
 module objects {
     /**
      * this abtract scene class is used to creat individual scene

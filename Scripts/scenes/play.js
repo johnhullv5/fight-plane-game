@@ -3,6 +3,15 @@ var __extends = (this && this.__extends) || function (d, b) {
     function __() { this.constructor = d; }
     d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
 };
+/**
+ * file name: Play.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Play scene
+ * Revsion History: 0.1
+ *
+ *
+ */
 var scenes;
 (function (scenes) {
     var Play = (function (_super) {

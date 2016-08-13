@@ -1,3 +1,13 @@
+
+/**
+ * file name: Button.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Button
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects{
     export class Button extends createjs.Bitmap {
 /**

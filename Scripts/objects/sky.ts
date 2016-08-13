@@ -1,3 +1,12 @@
+/**
+ * file name: Sky.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Sky background
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this is the sky objects

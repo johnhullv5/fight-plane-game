@@ -1,3 +1,13 @@
+
+/**
+ * file name: Enemy.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define Enemy
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this is the Enemy objects

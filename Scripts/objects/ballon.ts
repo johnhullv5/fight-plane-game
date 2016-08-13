@@ -1,3 +1,13 @@
+
+/**
+ * file name: Ballon.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description:  program define bunus
+ * Revsion History: 0.1
+ * 
+ * 
+ */
 module objects {
     /**
      * this is the Ballon objects

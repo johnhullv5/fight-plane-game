@@ -1,3 +1,13 @@
+/**
+ * file name: scene.ts
+ * author: Hao Jiang
+ * Last modified by: Hao Jiang
+ * description: main program define major scenes
+ * Revsion History: 0.1
+ * 
+ * 
+ */
+
 module config {
     export class Scene {
         public static MENU: number = 0;
