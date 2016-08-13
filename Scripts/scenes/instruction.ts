@@ -1,7 +1,8 @@
 module scenes {
-    export class Menu extends objects.Scene {
+    export class Instruction extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES
-        private _menuLabel: objects.Label;
+        private _titleLabel: objects.Label;
+        private _instructionLabel: objects.Label;
         private _startButton: objects.Button;
         private _sky:objects.Sky;
 
@@ -16,10 +17,15 @@ module scenes {
             this._sky = new objects.Sky("sky");
             this.addChild(this._sky);
 
+            this._titleLabel = new objects.Label("Instruction","40px","Consolas","#FF0000",
+            350,150,true);
+             this.addChild(this._titleLabel);
+
             //add Menu Label
-            this._menuLabel = new objects.Label("fight plane","60px","Consolas","#FFFF00",
-            320,240,true);
-             this.addChild(this._menuLabel);
+            this._instructionLabel = new objects.Label("use the mouse the control the plane's \n\npositon, try to "+
+            "avoid all clouds\n\n and collect more ballons","20px","Consolas","#FFFF00",
+            700,250,true);
+             this.addChild(this._instructionLabel);
 
              //add start button 
              this._startButton = new objects.Button(
@@ -45,7 +51,7 @@ module scenes {
 
         private _startButtonClick(event:createjs.MouseEvent):void{
             //Switch the scene
-             core.scene = config.Scene.ORDER;
+             core.scene = config.Scene.PLAY;
              core.changeScene();
 
 

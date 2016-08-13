@@ -12,6 +12,7 @@ var core;
     // declare scene variables
     var currentScene;
     var menu;
+    var order;
     var over;
     var play;
     //asset manifest for images and sounds
@@ -65,6 +66,11 @@ var core;
                 core.stage.removeAllChildren();
                 menu = new scenes.Menu();
                 currentScene = menu;
+                break;
+            case config.Scene.ORDER:
+                core.stage.removeAllChildren();
+                order = new scenes.Instruction();
+                currentScene = order;
                 break;
             //show the PLAY Scene
             case config.Scene.PLAY:

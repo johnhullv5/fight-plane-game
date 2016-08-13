@@ -31,6 +31,7 @@ namespace core {
     export let scene: number;
 
     let menu: scenes.Menu;
+    let order: scenes.Instruction;
     let over: scenes.Over;
     let play: scenes.Play;
 
@@ -95,6 +96,12 @@ namespace core {
                 stage.removeAllChildren();
                 menu = new scenes.Menu();
                 currentScene = menu;
+                break;
+
+             case config.Scene.ORDER:
+                stage.removeAllChildren();
+                order = new scenes.Instruction();
+                currentScene = order;
                 break;
             //show the PLAY Scene
             case config.Scene.PLAY:

@@ -5,20 +5,23 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 var scenes;
 (function (scenes) {
-    var Menu = (function (_super) {
-        __extends(Menu, _super);
+    var Instruction = (function (_super) {
+        __extends(Instruction, _super);
         /**
          *
          */
-        function Menu() {
+        function Instruction() {
             _super.call(this);
         }
-        Menu.prototype.Start = function () {
+        Instruction.prototype.Start = function () {
             this._sky = new objects.Sky("sky");
             this.addChild(this._sky);
+            this._titleLabel = new objects.Label("Instruction", "40px", "Consolas", "#FF0000", 350, 150, true);
+            this.addChild(this._titleLabel);
             //add Menu Label
-            this._menuLabel = new objects.Label("fight plane", "60px", "Consolas", "#FFFF00", 320, 240, true);
-            this.addChild(this._menuLabel);
+            this._instructionLabel = new objects.Label("use the mouse the control the plane's \n\npositon, try to " +
+                "avoid all clouds\n\n and collect more ballons", "20px", "Consolas", "#FFFF00", 700, 250, true);
+            this.addChild(this._instructionLabel);
             //add start button 
             this._startButton = new objects.Button("startButton", 320, 420, true);
             this.addChild(this._startButton);
@@ -27,18 +30,18 @@ var scenes;
             // add this scene to the global scene container
             core.stage.addChild(this);
         };
-        Menu.prototype.Update = function () {
+        Instruction.prototype.Update = function () {
             this._sky.update();
             //scene updates happen here...
         };
         //event handler ++++++++++++++++
-        Menu.prototype._startButtonClick = function (event) {
+        Instruction.prototype._startButtonClick = function (event) {
             //Switch the scene
-            core.scene = config.Scene.ORDER;
+            core.scene = config.Scene.PLAY;
             core.changeScene();
         };
-        return Menu;
+        return Instruction;
     }(objects.Scene));
-    scenes.Menu = Menu;
+    scenes.Instruction = Instruction;
 })(scenes || (scenes = {}));
-//# sourceMappingURL=menu.js.map
+//# sourceMappingURL=instruction.js.map
