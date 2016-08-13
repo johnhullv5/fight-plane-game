@@ -41,9 +41,9 @@ namespace core {
         { id: "nextButton", src: "../../Assets/images/nextButton.png" },
         { id: "exitButton", src: "../../Assets/images/exitButton.png" },
         { id: "sky", src: "../../Assets/images/240106381793617835.jpg" },
-        { id: "ballon", src: "../../Assets/images/ballon1.gif" },
+        { id: "ballon", src: "../../Assets/images/ballon.gif" },
         { id: "player", src: "../../Assets/images/avantar.gif" },
-        { id: "enemy", src: "../../Assets/images/cloud1.gif" },
+        { id: "enemy", src: "../../Assets/images/cloud.gif" },
         { id: "thunder", src: "../../Assets/audio/Missle.wav" },
         { id: "yay", src: "../../Assets/audio/yay.ogg" },
         { id: "engine", src: "../../Assets/audio/propellerEngine.ogg" }
