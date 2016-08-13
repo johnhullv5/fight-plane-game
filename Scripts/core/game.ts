@@ -46,7 +46,7 @@ namespace core {
         { id: "player", src: "../../Assets/images/avantar.gif" },
         { id: "enemy", src: "../../Assets/images/cloud.gif" },
         { id: "thunder", src: "../../Assets/audio/Missle.wav" },
-        { id: "yay", src: "../../Assets/audio/yay.ogg" },
+        { id: "yay", src: "../../Assets/audio/good.wav" },
         { id: "engine", src: "../../Assets/audio/propellerEngine.ogg" }
         // { id: "enemy", src: "../../Assets/images/cloud1.gif" },
 
