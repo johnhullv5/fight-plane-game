@@ -16,6 +16,10 @@ var core;
     var play;
     //asset manifest for images and sounds
     var assetData = [
+        { id: "startButton", src: "../../Assets/images/startButton.png" },
+        { id: "restartButton", src: "../../Assets/images/restartButton.png" },
+        { id: "nextButton", src: "../../Assets/images/nextButton.png" },
+        { id: "exitButton", src: "../../Assets/images/exitButton.png" },
         { id: "sky", src: "../../Assets/images/240106381793617835.jpg" },
         { id: "ballon", src: "../../Assets/images/ballon.gif" },
         { id: "player", src: "../../Assets/images/avantar.gif" },
@@ -24,29 +28,6 @@ var core;
         { id: "yay", src: "../../Assets/audio/yay.ogg" },
         { id: "engine", src: "../../Assets/audio/propellerEngine.ogg" }
     ];
-    var atlasData = {
-        "images": [
-            "../../Assets/images/atlas.png"
-        ],
-        "frames": [
-            [1, 1, 240, 161, 0, 0, -13],
-            [1, 164, 63, 71, 0, -93, -121],
-            [66, 164, 184, 39, 0, -8, -11],
-            [66, 205, 184, 39, 0, -8, -11],
-            [243, 1, 129, 121, 0, 0, 0],
-            [252, 124, 184, 39, 0, -8, -11],
-            [252, 165, 184, 39, 0, -8, -11]
-        ],
-        "animations": {
-            "avantar2": { "frames": [0] },
-            "ballon1": { "frames": [1] },
-            "exitButton": { "frames": [2] },
-            "nextButton": { "frames": [3] },
-            "cloud1": { "frames": [4] },
-            "restartButton": { "frames": [5] },
-            "startButton": { "frames": [6] }
-        }
-    };
     /**
      * this method preloads assets for the game.
      * @method preload
@@ -64,7 +45,6 @@ var core;
         core.stage.enableMouseOver(20);
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop); // create the event listener for the tick event
-        core.textureAtlas = new createjs.SpriteSheet(atlasData);
         //setup the default scene
         core.scene = config.Scene.MENU;
         changeScene();
